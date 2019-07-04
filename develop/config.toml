@@ -1,0 +1,90 @@
+[node]
+  node_name = ""
+  # Fast sync allows a block to catch up quickly to the chain by downloading blocks in parallel and verifying their commits
+  fast_sync = true
+  # Specify what backend database to use (goleveldb|cleveldb)
+  db = "cleveldb"
+  # Specify the application database directory. This is always relative to the root directory of the app.
+  db_dir = "nodedata"
+  # List of transaction tags to index in the database, allows them to be searched by the specified tags
+  index_tags = ["tx.owner", "tx.type", "tx.swapkey"]
+  # Tells the indexer to index all available tags, IndexTags has precedence over IndexAllTags
+  index_all_tags = false
+
+[network]
+  rpc_address = "tcp://127.0.0.1:26604"
+  # Main address for P2P connections
+  p2p_address = "tcp://127.0.0.1:26605"
+  # Address to advertise for incoming peers to connect to
+  external_p2p_address = ""
+  sdk_address = "tcp://127.0.0.1:26602"
+  btc_address = "tcp://127.0.0.1:NONE"
+  eth_address = "NONE"
+  olvm_address = "tcp://127.0.0.1:26603"
+  olvm_protocol = "tcp"
+
+[p2p]
+  # List of seed nodes to connect to
+  seeds = ["7e02b92e8865104449e91b82fdff3b2bff68ed5e@35.245.36.103:26605"]
+  # Enables seed mode, which will make the node crawl the network looking for peers
+  seed_mode = false
+  # List of peers to maintain a persistent connection to
+  persistent_peers = []
+  # Enable UPNP port forwarding
+  upnp = false
+  # Set true for strict address routability rules. If true, the node will fail to start if the given P2P address isn't routable'
+  addr_book_strict = false
+  # Max number of inbound peers
+  max_num_inbound_peers = 40
+  # Max number of outbound peers to connect to, excluding persistent peers
+  max_num_outbound_peers = 10
+  # Time to wait before flushing messages out on the connection in milliseconds
+  flush_throttle_timeout = 100
+  # Max size of a message packet payload, in bytes
+  max_packet_msg_payload_size = 1024
+  # Rate at which packets can be sent, in bytes/second
+  send_rate = 5120000
+  # Rate at which packets can be received, in bytes/second
+  recv_rate = 5120000
+  # Set true to enable the peer-exchange reactor
+  pex = true
+  # List of peer IDs to keep private (will not be gossiped to other peers)
+  private_peer_ids = []
+  # Toggle to disable guard against peers connecting from the same IP
+  allow_duplicate_ip = true
+  # In milliseconds
+  handshake_timeout = 20000
+  # In milliseconds
+  dial_timeout = 3000
+
+[mempool]
+  recheck = true
+  broadcast = true
+  # Size of the mempool
+  size = 5000
+  cache_size = 10000
+
+[consensus]
+  # Determines where consensus is logged (stdout|<filename>)
+  log_output = "stdout"
+  # Determines the verbosity of consensus logs
+  log_level = "main:info,state:info,*:error"
+  # All timeouts are in milliseconds
+  timeout_propose = 3000
+  timeout_propose_delta = 500
+  timeout_prevote = 1000
+  timeout_prevote_delta = 500
+  timeout_precommit = 1000
+  timeout_precommit_delta = 500
+  timeout_commit = 5000
+  # Make progress as soon as we have all precommits (as if TimeoutCommit = 0)
+  skip_timeout_commit = false
+  # Should this node create empty blocks
+  create_empty_blocks = false
+  # Interval between empty block creation in milliseconds
+  create_empty_blocks_interval = 0
+  # Duration values in milliseconds
+  peer_gossip_sleep_duration = 100
+  peer_query_maj23_sleep_duration = 2000
+  # Block time parameter, corresponds to the minimum time increment between consecutive blocks
+  blocktime_iota = 0

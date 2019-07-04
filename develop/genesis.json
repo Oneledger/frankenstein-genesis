@@ -1,0 +1,154 @@
+{
+    "genesis_time": "2019-07-04T22:06:47.653994207Z",
+    "chain_id": "OneLedger-cd0b",
+    "consensus_params": {
+      "block": {
+        "max_bytes": "22020096",
+        "max_gas": "-1",
+        "time_iota_ms": "1000"
+      },
+      "evidence": {
+        "max_age": "100000"
+      },
+      "validator": {
+        "pub_key_types": [
+          "ed25519"
+        ]
+      }
+    },
+    "validators": [
+      {
+        "address": "E38E6A30184CE17F6A0E525DF56A209502F704C3",
+        "pub_key": {
+          "type": "tendermint/PubKeyEd25519",
+          "value": "bG9B8n6/gIfhoA9NHBHWcRkDQ5cYNv4TT7wFfF2I4A4="
+        },
+        "power": "1",
+        "name": "0"
+      },
+      {
+        "address": "AA624D4A059B289D5E49FE431E2B06401C306FE6",
+        "pub_key": {
+          "type": "tendermint/PubKeyEd25519",
+          "value": "eLcKFFtjgZrC7JCP3BkKOCVg5qsFL+KgQsfh6s9T84E="
+        },
+        "power": "1",
+        "name": "1"
+      },
+      {
+        "address": "12F708DE785F86F26405CEC4CB585911CBDC8575",
+        "pub_key": {
+          "type": "tendermint/PubKeyEd25519",
+          "value": "QB/9MKqHGtp9RGMdy7H6+3Uq6NcS75x3rSxEsnnvgS0="
+        },
+        "power": "1",
+        "name": "2"
+      },
+      {
+        "address": "2B9EB1103EC402DDBDBF0A8C59204DE4CDF87F8A",
+        "pub_key": {
+          "type": "tendermint/PubKeyEd25519",
+          "value": "0m7JUAhSKyeeVnEPkuRPpyePF2NjR4cF84mBXgWacLI="
+        },
+        "power": "1",
+        "name": "3"
+      }
+    ],
+    "app_hash": "",
+    "app_state": {
+      "currencies": [
+        {
+          "name": "OLT",
+          "chain": 0,
+          "decimal": 18
+        },
+        {
+          "name": "VT",
+          "chain": 0,
+          "decimal": 0
+        }
+      ],
+      "states": [
+        {
+          "address": "2D67035705D1DF48377DECB8EC3CEAD8FEE3CF09",
+          "balance": {
+            "coins": [
+              {
+                "curr_name": "OLT",
+                "curr_chain": 0,
+                "curr_decimal": 18,
+                "amt": "zsuPJ/QgDzoAAAA="
+              },
+              {
+                "curr_name": "VT",
+                "curr_chain": 0,
+                "curr_decimal": 0,
+                "amt": "ZQ=="
+              }
+            ],
+            "tag": "balance_data"
+          }
+        },
+        {
+          "address": "4A6AC0E0B7D926A5626DE5C00A63D7A5669199DF",
+          "balance": {
+            "coins": [
+              {
+                "curr_name": "OLT",
+                "curr_chain": 0,
+                "curr_decimal": 18,
+                "amt": "zsuPJ/QgDzoAAAA="
+              },
+              {
+                "curr_name": "VT",
+                "curr_chain": 0,
+                "curr_decimal": 0,
+                "amt": "ZQ=="
+              }
+            ],
+            "tag": "balance_data"
+          }
+        },
+        {
+            "address": "316172DD38E3DA68AE2E2D8030049FB5F9441FD0",
+            "balance": {
+              "coins": [
+                {
+                  "curr_name": "OLT",
+                  "curr_chain": 0,
+                  "curr_decimal": 18,
+                  "amt": "zsuPJ/QgDzoAAAA="
+                },
+                {
+                  "curr_name": "VT",
+                  "curr_chain": 0,
+                  "curr_decimal": 0,
+                  "amt": "ZQ=="
+                }
+              ],
+              "tag": "balance_data"
+            }
+          },
+          {
+            "address": "C519944E1A09AFC7E3011A11DA10BC6A914BD61E",
+            "balance": {
+              "coins": [
+                {
+                  "curr_name": "OLT",
+                  "curr_chain": 0,
+                  "curr_decimal": 18,
+                  "amt": "zsuPJ/QgDzoAAAA="
+                },
+                {
+                  "curr_name": "VT",
+                  "curr_chain": 0,
+                  "curr_decimal": 0,
+                  "amt": "ZQ=="
+                }
+              ],
+              "tag": "balance_data"
+            }
+          }
+        ]
+      }
+    }
