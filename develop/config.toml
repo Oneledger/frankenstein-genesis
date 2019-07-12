@@ -17,15 +17,15 @@
   p2p_address = "tcp://127.0.0.1:26605"
   # Address to advertise for incoming peers to connect to
   external_p2p_address = ""
-  sdk_address = "tcp://127.0.0.1:26602"
+  sdk_address = "http://127.0.0.1:26610"
   btc_address = "tcp://127.0.0.1:NONE"
   eth_address = "NONE"
-  olvm_address = "tcp://127.0.0.1:26603"
+  olvm_address = "tcp://127.0.0.1:26611"
   olvm_protocol = "tcp"
 
 [p2p]
   # List of seed nodes to connect to
-  seeds = ["e00a4c8b7da58bd33e9d844a01da73b805eea094@35.245.36.103:26605"]
+  seeds = ["741f96fbbb1090a57fe110a11d23e94595719a43@35.245.36.103:26605"]
   # Enables seed mode, which will make the node crawl the network looking for peers
   seed_mode = false
   # List of peers to maintain a persistent connection to
