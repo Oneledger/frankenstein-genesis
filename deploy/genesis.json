@@ -1,6 +1,6 @@
 {
-  "genesis_time": "2019-07-15T20:30:15.452119827Z",
-  "chain_id": "OneLedger-bffa",
+  "genesis_time": "2019-07-15T21:29:40.238049699Z",
+  "chain_id": "OneLedger-1450",
   "consensus_params": {
     "block": {
       "max_bytes": "22020096",
@@ -18,37 +18,37 @@
   },
   "validators": [
     {
-      "address": "69908F38D1D3A4373B412444A31A073D4040E33F",
+      "address": "6FDA79E4C0BABDD11F36DCB76C6240623CC6DD4B",
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "+i+NiLdMV21bDaICYWPEqrxWWciYxFFmO7xF2erxESA="
+        "value": "b+vq6jSFZ54ysbQ3bPUFpQCGYKJMAT2lbQs0EkWxFsM="
       },
       "power": "1",
       "name": "0"
     },
     {
-      "address": "54B16AB6CE8D262715CBD18167ECC218EC92EE76",
+      "address": "61C041B5E22579D0B8F106E1EC6B26F6889D1466",
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "Q7mIqr4eavCyC9qe/jCnLOU/Z6arnExDi3OEf2IHr3M="
+        "value": "bNS15/H7OkAkgmPCsrgt5TsW+XSBVPox/3oPyzvdb3E="
       },
       "power": "1",
       "name": "1"
     },
     {
-      "address": "C17FE51D70B3FCE8D06359715E0DC94C6A76C1A0",
+      "address": "C24C29057DF6CE306867DFB008728B9ECDAEBFB4",
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "R4R++u/dB4GcQUhqE3iCBw9aUfcNRt6lqZC8WHSHRtc="
+        "value": "DQVDwCWC3lAPDGat70emkeXvpQFvFWUxI1oV1WsoW7c="
       },
       "power": "1",
       "name": "2"
     },
     {
-      "address": "AD595188C95D6D77DA27296D1C230503AB548FA6",
+      "address": "7337E4796D5517CAA2F9F812D17E262D0065A48F",
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "MpRmyMuxvIP5zJmJ0ikIevUsdiO99jg2hVzOQ4ZOxrM="
+        "value": "gudjf+lM96H8bpI9NmVMRwytaVwNz4jw6191An9jVTA="
       },
       "power": "1",
       "name": "3"
@@ -70,14 +70,14 @@
     ],
     "states": [
       {
-        "address": "9581EB139F7B43A0FFA45A5FB33C4861A44F6480",
+        "address": "094CE532D131E117CDB9490F593901D23B60A1D1",
         "balance": {
           "coins": [
             {
               "curr_name": "OLT",
               "curr_chain": 0,
               "curr_decimal": 18,
-              "amt": "pW+luZAZpcgAAAA="
+              "amt": "zsuPJ/QgDzoAAAA="
             },
             {
               "curr_name": "VT",
@@ -90,14 +90,14 @@
         }
       },
       {
-        "address": "40D0039FCE220C47E0BAC84877B5DCE0F2E878D1",
+        "address": "1FA9076E779B805C7EBBBA49228C6A61E8292058",
         "balance": {
           "coins": [
             {
               "curr_name": "OLT",
               "curr_chain": 0,
               "curr_decimal": 18,
-              "amt": "pW+luZAZpcgAAAA="
+              "amt": "zsuPJ/QgDzoAAAA="
             },
             {
               "curr_name": "VT",
@@ -110,14 +110,14 @@
         }
       },
       {
-        "address": "58B58B84A43E983A81D830911E9E491400B9E783",
+        "address": "057FA21194EA9EC66FA67AD25399DDAA5C58C9C0",
         "balance": {
           "coins": [
             {
               "curr_name": "OLT",
               "curr_chain": 0,
               "curr_decimal": 18,
-              "amt": "pW+luZAZpcgAAAA="
+              "amt": "zsuPJ/QgDzoAAAA="
             },
             {
               "curr_name": "VT",
@@ -130,40 +130,20 @@
         }
       },
       {
-        "address": "567EF67542F46E09CADF7CAFF22EDBF1B2E65357",
+        "address": "F71362D0326DE2ADDA90685C580E5F6C148367C4",
         "balance": {
           "coins": [
             {
               "curr_name": "OLT",
               "curr_chain": 0,
               "curr_decimal": 18,
-              "amt": "pW+luZAZpcgAAAA="
+              "amt": "zsuPJ/QgDzoAAAA="
             },
             {
               "curr_name": "VT",
               "curr_chain": 0,
               "curr_decimal": 0,
               "amt": "ZQ=="
-            }
-          ],
-          "tag": "balance_data"
-        }
-      },
-      {
-        "address": "DCA6F8C8491CF5CEBACA72BF3BD4C337FE1F7787",
-        "balance": {
-          "coins": [
-            {
-              "curr_name": "OLT",
-              "curr_chain": 0,
-              "curr_decimal": 18,
-              "amt": "pW+luZAZpcgAAAA="
-            },
-            {
-              "curr_name": "VT",
-              "curr_chain": 0,
-              "curr_decimal": 0,
-              "amt": "AQ=="
             }
           ],
           "tag": "balance_data"

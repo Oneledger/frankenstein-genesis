@@ -29,7 +29,7 @@
   # Enables seed mode, which will make the node crawl the network looking for peers
   seed_mode = false
   # List of peers to maintain a persistent connection to
-  persistent_peers = ["9581eb139f7b43a0ffa45a5fb33c4861a44f6480@127.0.0.1:26601", "40d0039fce220c47e0bac84877b5dce0f2e878d1@127.0.0.1:26605", "58b58b84a43e983a81d830911e9e491400b9e783@127.0.0.1:26609", "567ef67542f46e09cadf7caff22edbf1b2e65357@127.0.0.1:26613", "dca6f8c8491cf5cebaca72bf3bd4c337fe1f7787@127.0.0.1:26617"]
+  persistent_peers = ["094ce532d131e117cdb9490f593901d23b60a1d1@127.0.0.1:26601", "1fa9076e779b805c7ebbba49228c6a61e8292058@127.0.0.1:26605", "057fa21194ea9ec66fa67ad25399ddaa5c58c9c0@127.0.0.1:26609", "f71362d0326de2adda90685c580e5f6c148367c4@127.0.0.1:26613"]
   # Enable UPNP port forwarding
   upnp = false
   # Set true for strict address routability rules. If true, the node will fail to start if the given P2P address isn't routable'
