@@ -1,6 +1,6 @@
 {
-  "genesis_time": "2019-07-17T19:03:21.301946676Z",
-  "chain_id": "OneLedger-18e8",
+  "genesis_time": "2019-07-17T19:18:34.464193928Z",
+  "chain_id": "OneLedger-5a52",
   "consensus_params": {
     "block": {
       "max_bytes": "22020096",
@@ -18,37 +18,37 @@
   },
   "validators": [
     {
-      "address": "FE86EFB0456B705FDB3064F2C8A7983671A1AEB9",
+      "address": "A1E8A38DE807286A5AF89D47BD39D5748DDCC125",
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "/DwdIKxEqS5nVO179joiEy9ADh5Y/7xpqLKBWEWRq8k="
+        "value": "/MIIkVmcARocpzT/WZBPrfslRRdH8p/ELjYPqkbdIck="
       },
       "power": "1",
       "name": "0"
     },
     {
-      "address": "D5C99B9BF93ED677E7435F55E00D774B68BCE6FB",
+      "address": "90D4C172FC9809D6C2E88F997E0791AA8CF797C9",
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "fDJOemwRaIuE2DFVAXGFgm5LCgdex2/+q65Yf4LrH7Q="
+        "value": "gcfxJ8RQragpLHymHJ/gjpVQ/wN6Z8PXf4cnE7g4wn0="
       },
       "power": "1",
       "name": "1"
     },
     {
-      "address": "9C88F18A3878629F0B8DD811B5CFA163892EAE53",
+      "address": "C7BC47A957F24F8F987420A927922061A7988817",
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "h2SltOa+DQRU9iNfZMqylj2QUQgZfVYL8U5V1ZWjHe4="
+        "value": "Q7qfpYR1ZjjHbfVO5AaGXvFWVAq92qWZYe2L3s8ruiU="
       },
       "power": "1",
       "name": "2"
     },
     {
-      "address": "6774B699DF457785F5C6BFF302C4009D1F9FF642",
+      "address": "2E78383BE92E861EE05D239D32099503EC7194CF",
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "bPW2jiS5AGFiVDMnahoZCu2u2EkNkr97gxMItymjqd8="
+        "value": "mDavTFLYkAyWFgzaomeP32+eumxs/a6xwxn7WmSm4aw="
       },
       "power": "1",
       "name": "3"
@@ -70,80 +70,96 @@
     ],
     "states": [
       {
-        "address": "33406DF79C446D700487EF24BF71B209863C4119",
+        "address": "7427B7CFD95C20855D9EF9A462B79B80B05633F9",
         "balance": {
           "coins": [
             {
-              "curr_name": "OLT",
-              "curr_chain": 0,
-              "curr_decimal": 18,
-              "amt": "zsuPJ/QgDzoAAAA="
+              "currency": {
+                "name": "OLT",
+                "chain": 0,
+                "decimal": 18
+              },
+              "amount": "IjI1MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMCI="
             },
             {
-              "curr_name": "VT",
-              "curr_chain": 0,
-              "curr_decimal": 0,
-              "amt": "ZQ=="
+              "currency": {
+                "name": "VT",
+                "chain": 0,
+                "decimal": 0
+              },
+              "amount": "IjEwMSI="
             }
           ],
           "tag": "balance_data"
         }
       },
       {
-        "address": "B26FBB864CF2C72C69E8CEF00847475F9599B124",
+        "address": "15084D8E3AD03B855FD5A1F1B43043F8F6CC32EB",
         "balance": {
           "coins": [
             {
-              "curr_name": "OLT",
-              "curr_chain": 0,
-              "curr_decimal": 18,
-              "amt": "zsuPJ/QgDzoAAAA="
+              "currency": {
+                "name": "OLT",
+                "chain": 0,
+                "decimal": 18
+              },
+              "amount": "IjI1MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMCI="
             },
             {
-              "curr_name": "VT",
-              "curr_chain": 0,
-              "curr_decimal": 0,
-              "amt": "ZQ=="
+              "currency": {
+                "name": "VT",
+                "chain": 0,
+                "decimal": 0
+              },
+              "amount": "IjEwMSI="
             }
           ],
           "tag": "balance_data"
         }
       },
       {
-        "address": "DA689A5A679A4EA36BC473B9B081A9A15AF46A23",
+        "address": "3D2A9D81FCEEA3300F7B0C0463A16CB6794A825A",
         "balance": {
           "coins": [
             {
-              "curr_name": "OLT",
-              "curr_chain": 0,
-              "curr_decimal": 18,
-              "amt": "zsuPJ/QgDzoAAAA="
+              "currency": {
+                "name": "OLT",
+                "chain": 0,
+                "decimal": 18
+              },
+              "amount": "IjI1MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMCI="
             },
             {
-              "curr_name": "VT",
-              "curr_chain": 0,
-              "curr_decimal": 0,
-              "amt": "ZQ=="
+              "currency": {
+                "name": "VT",
+                "chain": 0,
+                "decimal": 0
+              },
+              "amount": "IjEwMSI="
             }
           ],
           "tag": "balance_data"
         }
       },
       {
-        "address": "8865C9FD0244E1F89ADA080B92F865E2620BB4A8",
+        "address": "47CEA1FEEFEE54E6E1CF6BA5E197DA73D3D66450",
         "balance": {
           "coins": [
             {
-              "curr_name": "OLT",
-              "curr_chain": 0,
-              "curr_decimal": 18,
-              "amt": "zsuPJ/QgDzoAAAA="
+              "currency": {
+                "name": "OLT",
+                "chain": 0,
+                "decimal": 18
+              },
+              "amount": "IjI1MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMCI="
             },
             {
-              "curr_name": "VT",
-              "curr_chain": 0,
-              "curr_decimal": 0,
-              "amt": "ZQ=="
+              "currency": {
+                "name": "VT",
+                "chain": 0,
+                "decimal": 0
+              },
+              "amount": "IjEwMSI="
             }
           ],
           "tag": "balance_data"
