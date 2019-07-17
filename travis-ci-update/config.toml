@@ -3,11 +3,11 @@
   # Fast sync allows a block to catch up quickly to the chain by downloading blocks in parallel and verifying their commits
   fast_sync = true
   # Specify what backend database to use (goleveldb|cleveldb)
-  db = "goleveldb"
+  db = "cleveldb"
   # Specify the application database directory. This is always relative to the root directory of the app.
   db_dir = "nodedata"
   # List of transaction tags to index in the database, allows them to be searched by the specified tags
-  index_tags = ["tx.owner", "tx.type", "tx.swapkey"]
+  index_tags = []
   # Tells the indexer to index all available tags, IndexTags has precedence over IndexAllTags
   index_all_tags = false
 
@@ -16,7 +16,7 @@
   # Main address for P2P connections
   p2p_address = "tcp://127.0.0.1:26601"
   # Address to advertise for incoming peers to connect to
-  external_p2p_address = ""
+  external_p2p_address = "tcp://34.74.171.108:26605"
   sdk_address = "http://127.0.0.1:26602"
   btc_address = "tcp://127.0.0.1:NONE"
   eth_address = "NONE"
@@ -25,11 +25,11 @@
 
 [p2p]
   # List of seed nodes to connect to
-  seeds = []
+  seeds = ["894f8462744411c28b9134df1f044484fdc3e13f@35.245.36.103:26605"]
   # Enables seed mode, which will make the node crawl the network looking for peers
   seed_mode = false
   # List of peers to maintain a persistent connection to
-  persistent_peers = ["6d397ff8497a46f6891a07774f7f7ef68c810c6a@127.0.0.1:26601", "93e3d7152c77bed70b7278cb6579733f4f5c461c@127.0.0.1:26605", "af2ff9e7be35ced9533ec99a7c5a5b9d0447317d@127.0.0.1:26609", "17b0c61389a268817d93fd4c83008a16e4cae731@127.0.0.1:26613"]
+  persistent_peers = []
   # Enable UPNP port forwarding
   upnp = false
   # Set true for strict address routability rules. If true, the node will fail to start if the given P2P address isn't routable'
@@ -66,7 +66,7 @@
 
 [consensus]
   # Determines where consensus is logged (stdout|<filename>)
-  log_output = "consensus.log"
+  log_output = "stdout"
   # Determines the verbosity of consensus logs
   log_level = "main:info,state:info,*:error"
   # All timeouts are in milliseconds
@@ -76,7 +76,7 @@
   timeout_prevote_delta = 500
   timeout_precommit = 1000
   timeout_precommit_delta = 500
-  timeout_commit = 1000
+  timeout_commit = 5000
   # Make progress as soon as we have all precommits (as if TimeoutCommit = 0)
   skip_timeout_commit = false
   # Should this node create empty blocks
