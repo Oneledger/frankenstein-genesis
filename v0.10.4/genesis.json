@@ -1,11 +1,11 @@
 {
-  "genesis_time": "2019-06-26T17:50:38.330558079Z",
-  "chain_id": "OneLedger-57d9",
+  "genesis_time": "2019-07-18T17:35:38.451022014Z",
+  "chain_id": "OneLedger-dac5",
   "consensus_params": {
     "block": {
       "max_bytes": "22020096",
       "max_gas": "-1",
-      "time_iota_ms": "5000"
+      "time_iota_ms": "1000"
     },
     "evidence": {
       "max_age": "100000"
@@ -18,73 +18,73 @@
   },
   "validators": [
     {
-      "address": "CDAACE3147A410A755DF4ABA4002FE0F7FF4CAFA",
+      "address": "17CDE6858ECCBBBA8D7A10172CCAF66F594F0E95",
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "OzJ9KqDa8vE13/6uPDsyUnjV2nrgP/bn2wmXec2bxRI="
+        "value": "+2H3kyb+aHJKeZ0/fd+TR4rHXb5sdRK3KNtFiPiu86k="
       },
       "power": "1",
       "name": "0"
     },
     {
-      "address": "5F3715F0980A059A0D076C3D6BB69F84B504D9BC",
+      "address": "2961A3ED41AB66971F8953619F0DF1484232C6E4",
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "OAR58IPnT4xQhE14jZOYKWpzDxCCjC6M8d9ohXeYleg="
+        "value": "IkXZCSd8K2mgS4/hAASIbD4KERPsGRYg6gvZD1KcBdo="
       },
       "power": "1",
       "name": "1"
     },
     {
-      "address": "A1F89F4A3F06613D518022EFFDEA8FEAD92BBF31",
+      "address": "0E069CFFA1147B3C15CC790A62E3404445C2B3FE",
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "AKgVzjWPhojp4M4nCh4a9/gyuZdHUvEY6VwdEmBY05I="
+        "value": "CINZQ6OVVysM+21Fumg9UkLtKAF5zPmiw5Gml943xOk="
       },
       "power": "1",
       "name": "2"
     },
     {
-      "address": "1C441BAC0A36D02E985D6EB3B33AC6751944FB36",
+      "address": "4AD12A31F5D36C1F85DE648E13D04D6098D53E39",
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "TrzqsC5lbwT9kIFgzTzf97A+QNY9ld9wC+jwguCsnRE="
+        "value": "UOH4iqR25yYlgIQrGyyCukIHLUUUT5A4dUBLYz/sjQ4="
       },
       "power": "1",
       "name": "3"
     },
     {
-      "address": "63F9B106E3B5A3434ED9134F9E2F22866A674A2F",
+      "address": "2EC31799C7DB5A05CB991F269B0056D5D434B6B7",
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "KSK8XHyaInR8T9Tb+CH9O6vx9WXrqyitDbT0fY7crAs="
+        "value": "eFFa24uqs+98oUWx+TbH98jlppFe5cKuPtNH1FVQFds="
       },
       "power": "1",
       "name": "4"
     },
     {
-      "address": "40B62AF513C664ED7433816C5F9FB3C93423234E",
+      "address": "3A4B53D192BAA537E556E09B216F930E80C782B8",
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "9VSix9ukpJFZ+VfDXRJ9k51MpTjJ7TghzxhHqOoTkuI="
+        "value": "6ED6jLPCUrdT0Aw5pnUltMEbrAzqoHyrV3M40taZNXs="
       },
       "power": "1",
       "name": "5"
     },
     {
-      "address": "82BFA78E74A98DABE0E3AEEE375C0F8959EA54A9",
+      "address": "29DA45DB97A1EEE944C77705D3C04DA2A0637E96",
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "3JQnfMDLGUyLRfwJ8dm8uNWo/fQGQbVVojPz7a5Nh9g="
+        "value": "Zpfu53WGGKsEa5QPbBDT8tq2pFRwobiNXn199JG3Iow="
       },
       "power": "1",
       "name": "6"
     },
     {
-      "address": "F5235B81E8E1B0058C277390B7837BFF40738FF9",
+      "address": "297379968D7E746BB5DA05978812002CB576D61D",
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "E82AYSdLlJIzO7DJx2OVA2Z/fMahUJRiiU1v/UTclQ4="
+        "value": "6SgP0p/HkZLgZqm8WbyUtA73Veu5UIOJCnA4ntEaFvI="
       },
       "power": "1",
       "name": "7"
@@ -106,7 +106,7 @@
     ],
     "states": [
       {
-        "address": "392D92724F63EA9D7C8BA6F346D518E96D3A3AFF",
+        "address": "C7C42BABC60C46A9CB710E6384B67D27EDD7DC98",
         "balance": {
           "coins": [
             {
@@ -126,7 +126,7 @@
         }
       },
       {
-        "address": "82681388A9C337F992D70379200347D315859C49",
+        "address": "FDF50ABC24FFCC9A6D44BDE2DCDADC1E4DE23E8F",
         "balance": {
           "coins": [
             {
@@ -146,7 +146,7 @@
         }
       },
       {
-        "address": "3417FD011740858041833B78FBA5ECBF34906F31",
+        "address": "6F68ED95420E6BEDB8241990251C830A66D8FBA1",
         "balance": {
           "coins": [
             {
@@ -166,7 +166,7 @@
         }
       },
       {
-        "address": "78CF7660D5D208AD02258D1C26DEEFBF843B213A",
+        "address": "8FD7FB20BEA3957B3D19AA9EBB1ED171D8395420",
         "balance": {
           "coins": [
             {
@@ -186,7 +186,7 @@
         }
       },
       {
-        "address": "812D79FB9CDC96CEF0446EB7B6352D71DF4E6F68",
+        "address": "DC95EEFDF6304863BBB8BAD6C651BF1F48093978",
         "balance": {
           "coins": [
             {
@@ -206,7 +206,7 @@
         }
       },
       {
-        "address": "C969CBC496292E508E1AFCFB149D27EF8A19DBF1",
+        "address": "564C2D0CECE57B85186B4A3896F75B5869C63857",
         "balance": {
           "coins": [
             {
@@ -226,7 +226,7 @@
         }
       },
       {
-        "address": "18CC6E67E0D2FBFB8BF422F68723ACEEEDAF7539",
+        "address": "EEF8A1B199794A7EB664B1528029BFBC73EDCA56",
         "balance": {
           "coins": [
             {
@@ -246,7 +246,7 @@
         }
       },
       {
-        "address": "924CDABE13962BE0142EFB0415041D3E625A6677",
+        "address": "B337823D169B1AB0EB4985C374C4EF47D1D6C4D4",
         "balance": {
           "coins": [
             {
