@@ -16,7 +16,7 @@
   # Main address for P2P connections
   p2p_address = "tcp://127.0.0.1:26601"
   # Address to advertise for incoming peers to connect to
-  external_p2p_address = "tcp://34.73.232.34:26605"
+  external_p2p_address = "tcp://35.237.231.107:26605"
   sdk_address = "http://127.0.0.1:26602"
   btc_address = "tcp://127.0.0.1:NONE"
   eth_address = "NONE"
@@ -25,7 +25,7 @@
 
 [p2p]
   # List of seed nodes to connect to
-  seeds = ["6e567ce59cb2df7b018b2dcfa93ce6ce14d6b27a@35.245.204.124:26605"]
+  seeds = ["b915e6d66967bab69920e067cd5602fd25732e42@35.245.76.234:26605"]
   # Enables seed mode, which will make the node crawl the network looking for peers
   seed_mode = false
   # List of peers to maintain a persistent connection to
@@ -47,7 +47,7 @@
   # Rate at which packets can be received, in bytes/second
   recv_rate = 5120000
   # Set true to enable the peer-exchange reactor
-  pex = true
+  pex = false
   # List of peer IDs to keep private (will not be gossiped to other peers)
   private_peer_ids = []
   # Toggle to disable guard against peers connecting from the same IP
@@ -80,9 +80,9 @@
   # Make progress as soon as we have all precommits (as if TimeoutCommit = 0)
   skip_timeout_commit = false
   # Should this node create empty blocks
-  create_empty_blocks = false
+  create_empty_blocks = true
   # Interval between empty block creation in milliseconds
-  create_empty_blocks_interval = 0
+  create_empty_blocks_interval = 10000
   # Duration values in milliseconds
   peer_gossip_sleep_duration = 100
   peer_query_maj23_sleep_duration = 2000
