@@ -1,6 +1,6 @@
 {
-  "genesis_time": "2019-07-15T18:18:00.31344721Z",
-  "chain_id": "OneLedger-ae84",
+  "genesis_time": "2019-07-22T19:18:08.685127082Z",
+  "chain_id": "OneLedger-b2f2",
   "consensus_params": {
     "block": {
       "max_bytes": "22020096",
@@ -18,37 +18,37 @@
   },
   "validators": [
     {
-      "address": "43A92950CA4B142EA5E3EC53C3986D8D186CC1E6",
+      "address": "ACE601EE69BF91BDB5F40CB45030B9A245BDF8A4",
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "AKSTgVtXEVrt2Xr4oi8VWCumhx4Iio70JedQgr+yELM="
+        "value": "fA2csKV6MoWaxVDUm8VCR0M4caVp7M+wjf5fNoiDLu0="
       },
       "power": "1",
       "name": "0"
     },
     {
-      "address": "AA520482BBCEB472E530B3078C2790575C767E29",
+      "address": "8BFBBB0EAED58817D3C6272AAF90A364D2D330CC",
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "NUwgaW4VSfC1umGloDf3R/M/JTrvQcVJnjz47vlghco="
+        "value": "Fq4ERZ38tIDNQVwOMAkhn1/pUbu7Lj3xjNPW1dRiq4E="
       },
       "power": "1",
       "name": "1"
     },
     {
-      "address": "2AA1D10B36111CEC549004D8FEF83CF9C06C0F15",
+      "address": "36FFBB4F23E0B1E120FFE2103CDB3425D7C9667F",
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "JVyRluwDdXJTNdpLIOZ3ogjw6QUCAfpOZxEF2GavIY4="
+        "value": "jbX8t80SAaX7qaLIIqBjf//glhrXiWqJdjxr5+VwXmY="
       },
       "power": "1",
       "name": "2"
     },
     {
-      "address": "51EBCFBF380E1C00EEB3AB446C2B1384949084EB",
+      "address": "3E126598F9C0A3D27B8872A7F34C2F033B30198D",
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "l2RXfgCwXa5ypzCg17c7raS0Y5et7oxFfPbfGmMRmbQ="
+        "value": "WAW+Wo2vRqKfSqEFQ0cTd+JPeQ2VgWWtAw4S0Ytc6wg="
       },
       "power": "1",
       "name": "3"
@@ -70,100 +70,96 @@
     ],
     "states": [
       {
-        "address": "FDE35DCB83D277A325265F690F3B26EA62A87E32",
+        "address": "A24937BE254209401FFA31D27130FDC51EA12F57",
         "balance": {
           "coins": [
             {
-              "curr_name": "OLT",
-              "curr_chain": 0,
-              "curr_decimal": 18,
-              "amt": "pW+luZAZpcgAAAA="
+              "currency": {
+                "name": "OLT",
+                "chain": 0,
+                "decimal": 18
+              },
+              "amount": "IjI1MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMCI="
             },
             {
-              "curr_name": "VT",
-              "curr_chain": 0,
-              "curr_decimal": 0,
-              "amt": "ZQ=="
+              "currency": {
+                "name": "VT",
+                "chain": 0,
+                "decimal": 0
+              },
+              "amount": "IjEwMSI="
             }
           ],
           "tag": "balance_data"
         }
       },
       {
-        "address": "236F5223FFCCE98F35E1E27BC18B4E5CB86D5CBB",
+        "address": "23612DC79AF59DC61C0C08C23C73C50ADD68BC0C",
         "balance": {
           "coins": [
             {
-              "curr_name": "OLT",
-              "curr_chain": 0,
-              "curr_decimal": 18,
-              "amt": "pW+luZAZpcgAAAA="
+              "currency": {
+                "name": "OLT",
+                "chain": 0,
+                "decimal": 18
+              },
+              "amount": "IjI1MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMCI="
             },
             {
-              "curr_name": "VT",
-              "curr_chain": 0,
-              "curr_decimal": 0,
-              "amt": "ZQ=="
+              "currency": {
+                "name": "VT",
+                "chain": 0,
+                "decimal": 0
+              },
+              "amount": "IjEwMSI="
             }
           ],
           "tag": "balance_data"
         }
       },
       {
-        "address": "F0732391494C47C35E981B1DB63CAE0FE9D032EE",
+        "address": "DCF7A5DDD4A505CE12953CA19D5F9E6DA434B2DE",
         "balance": {
           "coins": [
             {
-              "curr_name": "OLT",
-              "curr_chain": 0,
-              "curr_decimal": 18,
-              "amt": "pW+luZAZpcgAAAA="
+              "currency": {
+                "name": "OLT",
+                "chain": 0,
+                "decimal": 18
+              },
+              "amount": "IjI1MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMCI="
             },
             {
-              "curr_name": "VT",
-              "curr_chain": 0,
-              "curr_decimal": 0,
-              "amt": "ZQ=="
+              "currency": {
+                "name": "VT",
+                "chain": 0,
+                "decimal": 0
+              },
+              "amount": "IjEwMSI="
             }
           ],
           "tag": "balance_data"
         }
       },
       {
-        "address": "CB98E535AB3B314FB67320A3FE7470E980F1323A",
+        "address": "778DA89FC2DC0443B151CA403CA5DBF7A8788E08",
         "balance": {
           "coins": [
             {
-              "curr_name": "OLT",
-              "curr_chain": 0,
-              "curr_decimal": 18,
-              "amt": "pW+luZAZpcgAAAA="
+              "currency": {
+                "name": "OLT",
+                "chain": 0,
+                "decimal": 18
+              },
+              "amount": "IjI1MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMCI="
             },
             {
-              "curr_name": "VT",
-              "curr_chain": 0,
-              "curr_decimal": 0,
-              "amt": "ZQ=="
-            }
-          ],
-          "tag": "balance_data"
-        }
-      },
-      {
-        "address": "6E56D3522038216BC1A5EBC55C953BB00F1C4B64",
-        "balance": {
-          "coins": [
-            {
-              "curr_name": "OLT",
-              "curr_chain": 0,
-              "curr_decimal": 18,
-              "amt": "pW+luZAZpcgAAAA="
-            },
-            {
-              "curr_name": "VT",
-              "curr_chain": 0,
-              "curr_decimal": 0,
-              "amt": "AQ=="
+              "currency": {
+                "name": "VT",
+                "chain": 0,
+                "decimal": 0
+              },
+              "amount": "IjEwMSI="
             }
           ],
           "tag": "balance_data"
