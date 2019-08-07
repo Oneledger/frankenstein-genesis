@@ -25,7 +25,7 @@
 
 [p2p]
   # List of seed nodes to connect to
-  seeds = ["69a6aa8d7326aa2429d5016c361e8ce7451e83ac@35.245.204.124:26605"]
+  seeds = ["6e1c8f07eb755eb44961b846bd89994b19e9cd40@35.245.204.124:26605"]
   # Enables seed mode, which will make the node crawl the network looking for peers
   seed_mode = false
   # List of peers to maintain a persistent connection to
@@ -47,7 +47,7 @@
   # Rate at which packets can be received, in bytes/second
   recv_rate = 5120000
   # Set true to enable the peer-exchange reactor
-  pex = false
+  pex = true
   # List of peer IDs to keep private (will not be gossiped to other peers)
   private_peer_ids = []
   # Toggle to disable guard against peers connecting from the same IP
