@@ -1,6 +1,6 @@
 {
-  "genesis_time": "2019-08-28T15:42:47.351936144Z",
-  "chain_id": "OneLedger-b50f",
+  "genesis_time": "2019-09-06T20:51:00.037149305Z",
+  "chain_id": "OneLedger-88ba",
   "consensus_params": {
     "block": {
       "max_bytes": "22020096",
@@ -18,37 +18,37 @@
   },
   "validators": [
     {
-      "address": "B93F80FC673E555BB847FD8A25A8CA53F99CB9D1",
+      "address": "0343E25AAD3B289735B3B70CE044ED5E0A1CAAAA",
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "ruzwx/SfcK09Bx/lg+pm1BJKtfoJBHBKkutNWMJElR0="
+        "value": "/f46/itmMU84q0zcPrO4TtvYkMAYIXjaIKaXybKNaEs="
       },
       "power": "1",
       "name": "0"
     },
     {
-      "address": "7935F793ABEB15B2C8DCBF9A074B416B83E78FAF",
+      "address": "C0DE099E21EF95B56BED2920558E7BCA1DC7CB01",
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "kcVgtRtaU2AYRm9QK29igxl2+yn6MJA83mqfJFRjP+0="
+        "value": "gr5xj5njjmtBUeLg7sbr1MHm0l0D1l+o/TBJzMDnr84="
       },
       "power": "1",
       "name": "1"
     },
     {
-      "address": "2BF3CB054C9DA5091B121FE2A94049F18382C0E7",
+      "address": "5913A26FB2B3C66F15E0F9B5F76FFCDE418E5A59",
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "UEBzXkw/2dFJHtSmjmTjIz7FjY90mgr/gj1gCWhX2gE="
+        "value": "LvIxnvdPjFDxBXnW5xy9Yvg1bs33vxhxwsEySjzicFg="
       },
       "power": "1",
       "name": "2"
     },
     {
-      "address": "87A3CCB3E71D5CD3EA1E907A70D95BB0D48E949B",
+      "address": "208F19F002C4CF63B3320A614063272D9E9045AE",
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "zOkyT0P8BwnE2dqwrBYQdY0rL2EL0P6D7ZKkrd/8Ez0="
+        "value": "LuZ239obkNwgGZsc66Rqq5qX1nqqEdrLwuCryLIfOmA="
       },
       "power": "1",
       "name": "3"
@@ -70,7 +70,7 @@
     ],
     "states": [
       {
-        "address": "AED93624B642EFD665AC2BDA1396AC96624AFC03",
+        "address": "ECDFCB93D08C38FDC4ACAB9E3508DF5E9C70C6D2",
         "balance": {
           "coins": [
             {
@@ -94,7 +94,7 @@
         }
       },
       {
-        "address": "767E4E9854EB7334A3C2D2ADC7772B84350A906B",
+        "address": "43BB255229460E2E2E90CE5BB1C8976CBFD9B584",
         "balance": {
           "coins": [
             {
@@ -118,7 +118,7 @@
         }
       },
       {
-        "address": "EE79C93F1BF889E79D25F06AE2591C8200022269",
+        "address": "6EBEA9FBACB65A370F66A8AFD0328116774BB398",
         "balance": {
           "coins": [
             {
@@ -142,7 +142,7 @@
         }
       },
       {
-        "address": "F13E1642480F81414633AF9A559D2ABF4ACC5717",
+        "address": "B653886BBDF50692FD985BA75D1AA56ED34314FC",
         "balance": {
           "coins": [
             {
