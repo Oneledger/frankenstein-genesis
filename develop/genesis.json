@@ -1,6 +1,6 @@
 {
-  "genesis_time": "2019-10-09T19:38:30.602380775Z",
-  "chain_id": "OneLedger-36cf",
+  "genesis_time": "2019-10-10T18:55:18.750373166Z",
+  "chain_id": "OneLedger-7b4b",
   "consensus_params": {
     "block": {
       "max_bytes": "22020096",
@@ -18,37 +18,37 @@
   },
   "validators": [
     {
-      "address": "097BC861E256D3D83FF9CE9179039EE08DBAA88A",
+      "address": "D877967B599A234A696DDEBFDC6A236BA9EE87D3",
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "Mip/Vc4Or0tuicJtLXlikXJ93clve3cRSNapuTzHAr4="
+        "value": "nnm7t0YNcvbEw6pP7QRO8q2NBSxfaNkHScve8Aokpjc="
       },
       "power": "1",
       "name": "0"
     },
     {
-      "address": "B5C9C48880F5DC2CA635936FEA9E94063E6E14CC",
+      "address": "37DF963F600BD226DF24998D40220246CCF1EED1",
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "SgORRPn7PNes1pPk0kiGn29qnI2l9nIjUtihh7b5Ah8="
+        "value": "H/s0aQa+f8N5dx6/SlDsMp+9Lk5ewRZBLdkLgmMiRs0="
       },
       "power": "1",
       "name": "1"
     },
     {
-      "address": "29DBEBE60DEA52B4F95009E0FD1EB217577DED02",
+      "address": "E413386FD79D962DDC2AE7F54D82684A6966641F",
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "/HjlXVlVNrDjUMVppCr1mWATu0lhCF6CF2/7VSkh9GQ="
+        "value": "OdPSZDmxxzX6lZG2f7nRESkLEsM2FMpSt/D9tM6s8NA="
       },
       "power": "1",
       "name": "2"
     },
     {
-      "address": "F96623992DA46626073ECF258C12220DD4C64432",
+      "address": "4682AE4F18C6475E3E20792162F5A3BE97B37429",
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "8IWM7STqcm6gnLnTaYey/towar2FQELX7QZFocsDBVI="
+        "value": "53ZFnu0MkdIFz1ghTNqb0Xx9RViivgcdbtT699WDuvU="
       },
       "power": "1",
       "name": "3"
@@ -58,113 +58,131 @@
   "app_state": {
     "currencies": [
       {
+        "id": 0,
         "name": "OLT",
         "chain": 0,
-        "decimal": 18
+        "decimal": 18,
+        "unit": "nue"
       },
       {
+        "id": 1,
         "name": "VT",
         "chain": 0,
-        "decimal": 0
+        "decimal": 0,
+        "unit": "vt"
       }
     ],
-    "states": [
+    "feeOption": {
+      "feeCurrency": {
+        "id": 0,
+        "name": "OLT",
+        "chain": 0,
+        "decimal": 18,
+        "unit": "nue"
+      },
+      "minFeeDecimal": 9
+    },
+    "balances": [
       {
-        "address": "6F7C23296755EFD163EB42F1D7B8DD9E424FD77A",
-        "balance": {
-          "coins": [
-            {
-              "currency": {
-                "name": "OLT",
-                "chain": 0,
-                "decimal": 18
-              },
-              "amount": "IjI1MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMCI="
-            },
-            {
-              "currency": {
-                "name": "VT",
-                "chain": 0,
-                "decimal": 0
-              },
-              "amount": "IjEwMSI="
-            }
-          ],
-          "tag": "balance_data"
-        }
+        "address": "0x5a05478cce509379cd0fbd7b236119ccdefb8112",
+        "currency": "VT",
+        "amount": "100"
       },
       {
-        "address": "EF329ECEE53A6BDA07C02DBA2F6D5E429C871B02",
-        "balance": {
-          "coins": [
-            {
-              "currency": {
-                "name": "OLT",
-                "chain": 0,
-                "decimal": 18
-              },
-              "amount": "IjI1MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMCI="
-            },
-            {
-              "currency": {
-                "name": "VT",
-                "chain": 0,
-                "decimal": 0
-              },
-              "amount": "IjEwMSI="
-            }
-          ],
-          "tag": "balance_data"
-        }
+        "address": "0x3319a8364611178bba37c419a46a8b331a94b132",
+        "currency": "VT",
+        "amount": "100"
       },
       {
-        "address": "C2011AD23E8CCBB69768A5330B975E1160D353CD",
-        "balance": {
-          "coins": [
-            {
-              "currency": {
-                "name": "OLT",
-                "chain": 0,
-                "decimal": 18
-              },
-              "amount": "IjI1MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMCI="
-            },
-            {
-              "currency": {
-                "name": "VT",
-                "chain": 0,
-                "decimal": 0
-              },
-              "amount": "IjEwMSI="
-            }
-          ],
-          "tag": "balance_data"
-        }
+        "address": "0x10973044e0ce73937a47fa9184a392c1bb7b8f66",
+        "currency": "VT",
+        "amount": "100"
       },
       {
-        "address": "251FC8E86272F487A3BDCB231551426883B001A8",
-        "balance": {
-          "coins": [
-            {
-              "currency": {
-                "name": "OLT",
-                "chain": 0,
-                "decimal": 18
-              },
-              "amount": "IjI1MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMCI="
-            },
-            {
-              "currency": {
-                "name": "VT",
-                "chain": 0,
-                "decimal": 0
-              },
-              "amount": "IjEwMSI="
-            }
-          ],
-          "tag": "balance_data"
-        }
+        "address": "0x0c85278a33ff69e0c57a22549b52484c759ae6c6",
+        "currency": "VT",
+        "amount": "100"
+      },
+      {
+        "address": "0x5a05478cce509379cd0fbd7b236119ccdefb8112",
+        "currency": "OLT",
+        "amount": "250000000000000000000000000"
+      },
+      {
+        "address": "0x3319a8364611178bba37c419a46a8b331a94b132",
+        "currency": "OLT",
+        "amount": "250000000000000000000000000"
+      },
+      {
+        "address": "0x10973044e0ce73937a47fa9184a392c1bb7b8f66",
+        "currency": "OLT",
+        "amount": "250000000000000000000000000"
+      },
+      {
+        "address": "0x0c85278a33ff69e0c57a22549b52484c759ae6c6",
+        "currency": "OLT",
+        "amount": "250000000000000000000000000"
       }
-    ]
+    ],
+    "staking": [
+      {
+        "ValidatorAddress": "0xd877967b599a234a696ddebfdc6a236ba9ee87d3",
+        "StakeAddress": "0x5a05478cce509379cd0fbd7b236119ccdefb8112",
+        "Pubkey": {
+          "keyType": "ed25519",
+          "data": "nnm7t0YNcvbEw6pP7QRO8q2NBSxfaNkHScve8Aokpjc="
+        },
+        "ECDSAPubKey": {
+          "keyType": "secp256k1",
+          "data": "61rphyEC4DUTniUUm2WtocvXGKmkBvwADRGcrEaaU3V0Bx3pzWk="
+        },
+        "Name": "0",
+        "Amount": "1"
+      },
+      {
+        "ValidatorAddress": "0x37df963f600bd226df24998d40220246ccf1eed1",
+        "StakeAddress": "0x3319a8364611178bba37c419a46a8b331a94b132",
+        "Pubkey": {
+          "keyType": "ed25519",
+          "data": "H/s0aQa+f8N5dx6/SlDsMp+9Lk5ewRZBLdkLgmMiRs0="
+        },
+        "ECDSAPubKey": {
+          "keyType": "secp256k1",
+          "data": "61rphyEDNgvLaTGXEZtXsXXaMeUC6CQY7S+MGwiBMh/OkxcRrM4="
+        },
+        "Name": "1",
+        "Amount": "1"
+      },
+      {
+        "ValidatorAddress": "0xe413386fd79d962ddc2ae7f54d82684a6966641f",
+        "StakeAddress": "0x10973044e0ce73937a47fa9184a392c1bb7b8f66",
+        "Pubkey": {
+          "keyType": "ed25519",
+          "data": "OdPSZDmxxzX6lZG2f7nRESkLEsM2FMpSt/D9tM6s8NA="
+        },
+        "ECDSAPubKey": {
+          "keyType": "secp256k1",
+          "data": "61rphyEDP1xksRipU5sZmAnWrg3UJjxuIdYMla3aildZWVYsSXQ="
+        },
+        "Name": "2",
+        "Amount": "1"
+      },
+      {
+        "ValidatorAddress": "0x4682ae4f18c6475e3e20792162f5a3be97b37429",
+        "StakeAddress": "0x0c85278a33ff69e0c57a22549b52484c759ae6c6",
+        "Pubkey": {
+          "keyType": "ed25519",
+          "data": "53ZFnu0MkdIFz1ghTNqb0Xx9RViivgcdbtT699WDuvU="
+        },
+        "ECDSAPubKey": {
+          "keyType": "secp256k1",
+          "data": "61rphyEDnDBB+QXTWxgpfZfXjbChTrQzNzi3GHNfoXdHa73+/Bs="
+        },
+        "Name": "3",
+        "Amount": "1"
+      }
+    ],
+    "domains": [],
+    "fees": []
   }
 }
