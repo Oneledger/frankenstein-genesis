@@ -25,7 +25,7 @@
 
 [p2p]
   # List of seed nodes to connect to
-  seeds = ["2554f7813d84a1d491710dd05e792e6f8bdaf657@35.197.123.78:26605", "45e725a14c6d013cc9d71e8cf1b80f83489d7d29@34.94.116.186:26605"]
+  persistent_peers = ["1f9490472719b63d69f08af85cb3232a29a63e2e@10.12.0.3:26605", "7b0786a65199e7cf718a71e2dc42798dc2a7ef1d@10.12.1.2:26605", "be2bec2cd204732756571ccfd327c394f76f71ca@10.12.2.2:26605", "531e9f59e39650de4863930487c265858c655eca@10.12.0.2:26605"]
   # Enables seed mode, which will make the node crawl the network looking for peers
   seed_mode = false
   # List of peers to maintain a persistent connection to
@@ -49,7 +49,7 @@
   # Set true to enable the peer-exchange reactor
   pex = true
   # List of peer IDs to keep private (will not be gossiped to other peers)
-  private_peer_ids = []
+  private_peer_ids = ["1f9490472719b63d69f08af85cb3232a29a63e2e", "7b0786a65199e7cf718a71e2dc42798dc2a7ef1d", "be2bec2cd204732756571ccfd327c394f76f71ca", "531e9f59e39650de4863930487c265858c655eca"]
   # Toggle to disable guard against peers connecting from the same IP
   allow_duplicate_ip = true
   # In milliseconds
