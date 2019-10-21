@@ -65,6 +65,59 @@
       {
         "name": "VT",
         "chain": 0,
+        "decimal": 0
+      }
+    ],
+    "states": [
+      {
+        "address": "1F9490472719B63D69F08AF85CB3232A29A63E2E",
+        "balance": {
+          "coins": [
+            {
+              "currency": {
+                "name": "OLT",
+                "chain": 0,
+                "decimal": 18
+              },
+              "amount": "IjI1MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMCI="
+            },
+            {
+              "currency": {
+                "name": "VT",
+                "chain": 0,
+                "decimal": 0
+              },
+              "amount": "IjEwMSI="
+            }
+          ],
+          "tag": "balance_data"
+        }
+      },
+      {
+        "address": "7B0786A65199E7CF718A71E2DC42798DC2A7EF1D",
+        "balance": {
+          "coins": [
+            {
+              "currency": {
+                "name": "OLT",
+                "chain": 0,
+                "decimal": 18
+              },
+              "amount": "IjI1MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMCI="
+            },
+            {
+              "currency": {
+                "name": "VT",
+                "chain": 0,
+                "decimal": 0
+              },
+              "amount": "IjEwMSI="
+            }
+          ],
+          "tag": "balance_data"
+        }
+      },
+      {
         "address": "BE2BEC2CD204732756571CCFD327C394F76F71CA",
         "balance": {
           "coins": [
