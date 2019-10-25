@@ -25,7 +25,7 @@
 
 [p2p]
   # List of seed nodes to connect to
-  seeds = ["8590c82c286eca449a7084deb7695bced7f21257@35.245.204.124:26605"]
+  seeds = ["0c314e8cd4bedd301e28c623d33f41e519be2b6f@35.245.204.124:26605"]
   # Enables seed mode, which will make the node crawl the network looking for peers
   seed_mode = false
   # List of peers to maintain a persistent connection to
