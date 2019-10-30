@@ -10,6 +10,10 @@
   index_tags = []
   # Tells the indexer to index all available tags, IndexTags has precedence over IndexAllTags
   index_all_tags = false
+  # List of services used by the current Node. Possible valued [broadcast, node, owner, query, tx]
+  services = ["broadcast", "node", "owner", "query", "tx"]
+  # (ED25519 key) This private key will be used to generate a token for authentication through RPC Port.
+  rpc_private_key = ""
 
 [network]
   rpc_address = "tcp://127.0.0.1:26600"
@@ -25,7 +29,7 @@
 
 [p2p]
   # List of seed nodes to connect to
-  seeds = ["e1b630b3fd8dc801f5c53d01f4cb48052ce8edc6@35.245.204.124:26605"]
+  seeds = ["e3e7114c23bfc7ec4fb6b1ae3cfb7cec407ad14c@35.245.204.124:26605"]
   # Enables seed mode, which will make the node crawl the network looking for peers
   seed_mode = false
   # List of peers to maintain a persistent connection to
