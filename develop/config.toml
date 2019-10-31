@@ -6,6 +6,8 @@
   db = "cleveldb"
   # Specify the application database directory. This is always relative to the root directory of the app.
   db_dir = "nodedata"
+  # Specify the log level for olfullnode. 0: Fatal, 1: Error, 2: Warning, 3: Info, 4: Debug, 5: Detail
+  loglevel = 4
   # List of transaction tags to index in the database, allows them to be searched by the specified tags
   index_tags = []
   # Tells the indexer to index all available tags, IndexTags has precedence over IndexAllTags
@@ -29,7 +31,7 @@
 
 [p2p]
   # List of seed nodes to connect to
-  seeds = ["173c7ac723530aa310a0cd57327af3757d287bec@35.245.204.124:26605"]
+  seeds = ["0a72204b5148df712381ab00cd948a439107615d@35.245.204.124:26605"]
   # Enables seed mode, which will make the node crawl the network looking for peers
   seed_mode = false
   # List of peers to maintain a persistent connection to
