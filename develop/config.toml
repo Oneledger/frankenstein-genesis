@@ -22,7 +22,7 @@
   # Main address for P2P connections
   p2p_address = "tcp://127.0.0.1:26601"
   # Address to advertise for incoming peers to connect to
-  external_p2p_address = "tcp://34.73.232.34:26605"
+  external_p2p_address = "tcp://35.229.111.129:26605"
   sdk_address = "http://127.0.0.1:26602"
   btc_address = "tcp://127.0.0.1:NONE"
   eth_address = "NONE"
@@ -31,7 +31,7 @@
 
 [p2p]
   # List of seed nodes to connect to
-  seeds = ["7cd674f8368a7db60135e53d7ef1c3cc9366695f@35.245.204.124:26605"]
+  seeds = ["76554c22021980a7207fb1c93a98b20f9c7fe06f@35.245.204.124:26605"]
   # Enables seed mode, which will make the node crawl the network looking for peers
   seed_mode = false
   # List of peers to maintain a persistent connection to
