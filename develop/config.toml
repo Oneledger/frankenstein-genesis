@@ -1,5 +1,5 @@
 [node]
-  node_name = "0"
+  node_name = "2-Node"
   # Fast sync allows a block to catch up quickly to the chain by downloading blocks in parallel and verifying their commits
   fast_sync = true
   # Specify what backend database to use (goleveldb|cleveldb)
@@ -7,31 +7,31 @@
   # Specify the application database directory. This is always relative to the root directory of the app.
   db_dir = "nodedata"
   # Specify the log level for olfullnode. 0: Fatal, 1: Error, 2: Warning, 3: Info, 4: Debug, 5: Detail
-  loglevel = 4
+  loglevel = 3
   # List of transaction tags to index in the database, allows them to be searched by the specified tags
   index_tags = []
   # Tells the indexer to index all available tags, IndexTags has precedence over IndexAllTags
   index_all_tags = false
   # List of services used by the current Node. Possible valued [broadcast, node, owner, query, tx]
-  services = ["broadcast", "node", "owner", "query", "tx"]
+  services = ["broadcast", "node", "owner", "query", "tx", "btc", "eth"]
   # (ED25519 key) This private key will be used to generate a token for authentication through RPC Port.
   rpc_private_key = ""
 
 [network]
-  rpc_address = "tcp://127.0.0.1:26600"
+  rpc_address = "tcp://10.11.0.4:26604"
   # Main address for P2P connections
-  p2p_address = "tcp://127.0.0.1:26601"
+  p2p_address = "tcp://10.11.0.4:26605"
   # Address to advertise for incoming peers to connect to
-  external_p2p_address = "tcp://35.229.111.129:26605"
-  sdk_address = "http://127.0.0.1:26602"
+  external_p2p_address = "tcp://10.11.0.4:26605"
+  sdk_address = "tcp://10.11.0.4:26602"
   btc_address = "tcp://127.0.0.1:NONE"
   eth_address = "NONE"
-  olvm_address = "tcp://127.0.0.1:26603"
+  olvm_address = "tcp://127.0.0.1:26611"
   olvm_protocol = "tcp"
 
 [p2p]
   # List of seed nodes to connect to
-  seeds = ["76554c22021980a7207fb1c93a98b20f9c7fe06f@35.245.204.124:26605"]
+  seeds = ["5fe06454735268eae179326a06ad2a6c8f31f5f7@34.73.194.209:26605","c5f337551f5229bf716891cafde0a85674654b4a@34.235.20.53:26605"]
   # Enables seed mode, which will make the node crawl the network looking for peers
   seed_mode = false
   # List of peers to maintain a persistent connection to
@@ -67,7 +67,7 @@
   recheck = true
   broadcast = true
   # Size of the mempool
-  size = 5000
+  size = 15000
   cache_size = 10000
 
 [consensus]
@@ -94,3 +94,21 @@
   peer_query_maj23_sleep_duration = 2000
   # Block time parameter, corresponds to the minimum time increment between consecutive blocks
   blocktime_iota = 0
+
+[chain_driver]
+  # bitcoin chain types, mainnet, testnet3, or regtest
+  bitcoin_chain_type = ""
+  # ip address of bitcoin node
+  bitcoin_node_address = ""
+  # rpc port of bitcoin node
+  "bitcoin rpc_port" = ""
+  # rpc username of bitcoin node
+  bitcoin_rpc_username = ""
+  # rpc password of bitcoin node
+  bitcoin_rpc_password = ""
+  # token to use blockcypher APIs
+  blockcypher_token = ""
+
+[ethereum_chain_driver]
+  # ethereum node connection url default: http://localhost:7545
+  connection = "http://localhost:7545"
