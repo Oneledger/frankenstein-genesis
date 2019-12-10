@@ -1,5 +1,5 @@
 [node]
-  node_name = "2-Node"
+  node_name = "3-Node"
   # Fast sync allows a block to catch up quickly to the chain by downloading blocks in parallel and verifying their commits
   fast_sync = true
   # Specify what backend database to use (goleveldb|cleveldb)
@@ -18,20 +18,20 @@
   rpc_private_key = ""
 
 [network]
-  rpc_address = "tcp://10.11.0.4:26604"
+  rpc_address = "tcp://10.11.1.2:26604"
   # Main address for P2P connections
-  p2p_address = "tcp://10.11.0.4:26605"
+  p2p_address = "tcp://10.11.1.2:26605"
   # Address to advertise for incoming peers to connect to
-  external_p2p_address = "tcp://10.11.0.4:26605"
-  sdk_address = "tcp://10.11.0.4:26602"
+  external_p2p_address = "tcp://10.11.1.2:26605"
+  sdk_address = "tcp://10.11.1.2:26602"
   btc_address = "tcp://127.0.0.1:NONE"
   eth_address = "NONE"
-  olvm_address = "tcp://127.0.0.1:26611"
+  olvm_address = "tcp://127.0.0.1:26615"
   olvm_protocol = "tcp"
 
 [p2p]
   # List of seed nodes to connect to
-  seeds = ["5fe06454735268eae179326a06ad2a6c8f31f5f7@34.73.194.209:26605","c5f337551f5229bf716891cafde0a85674654b4a@34.235.20.53:26605"]
+  seeds = ["a6d40607ff119a8aeb727599aea9e5fda7e370e0@35.190.129.139:26605","a7fbb59c2c330e3cfbd3e3e282c2cb98cdddfd76@52.205.235.164:26605"]
   # Enables seed mode, which will make the node crawl the network looking for peers
   seed_mode = false
   # List of peers to maintain a persistent connection to
@@ -53,7 +53,7 @@
   # Rate at which packets can be received, in bytes/second
   recv_rate = 5120000
   # Set true to enable the peer-exchange reactor
-  pex = true
+  pex = false
   # List of peer IDs to keep private (will not be gossiped to other peers)
   private_peer_ids = []
   # Toggle to disable guard against peers connecting from the same IP
@@ -70,7 +70,7 @@
   size = 15000
   cache_size = 10000
 
-[consensus]
+  [consensus]
   # Determines where consensus is logged (stdout|<filename>)
   log_output = "stdout"
   # Determines the verbosity of consensus logs
@@ -107,7 +107,7 @@
   # rpc password of bitcoin node
   bitcoin_rpc_password = ""
   # token to use blockcypher APIs
-  blockcypher_token = ""
+  blockcypher_token = "e61acdee14e749a2b74e366cfc4373dd"
 
 [ethereum_chain_driver]
   # ethereum node connection url default: http://localhost:7545
