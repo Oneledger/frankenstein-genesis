@@ -1,6 +1,6 @@
 {
-  "genesis_time": "2019-12-11T15:07:44.140126237Z",
-  "chain_id": "OneLedger-c8ee",
+  "genesis_time": "2019-12-11T15:29:15.339560464Z",
+  "chain_id": "OneLedger-a6b2",
   "consensus_params": {
     "block": {
       "max_bytes": "22020096",
@@ -18,37 +18,37 @@
   },
   "validators": [
     {
-      "address": "16AC8A3F9211268703B081DAAB90C03CA4BBC91A",
+      "address": "DE0BAC6D291F3D82B1DA045619E0CFAE0CE2977D",
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "sgs5GDlMjpr64Tc1qFZIc98XkfveJkBOqfw53sZ6t7E="
+        "value": "688Yb1JaocRbAe7Of0IZNbvyi+XsHfPtlue3ynakc10="
       },
       "power": "1",
       "name": "0"
     },
     {
-      "address": "0C198E7A86FF6BEF72F81A92D955E92C4BFBCBD0",
+      "address": "C40248CF3E833B17483D873D4FA4769CA9AD9213",
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "q0inJjot8B6Kv/2ULYp1ADNigk+Xe2FOGsHZdl3KMJc="
+        "value": "KZKF+1PGsg9DRIwCvMlX06unp7EVRfQSObNRNYZ4kuw="
       },
       "power": "1",
       "name": "1"
     },
     {
-      "address": "035710441A19B877D67778EF547D3D57A2713348",
+      "address": "03A9C2640A47D7A845B6C46DB61BCC15EB488B96",
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "3a9tDC5DQfztl1O+HyAeR3VcZtw8nAtY26s/KhujPuA="
+        "value": "v3bcM7Q2HfoYOMC5u9YCHHO+e1O3lgEEbikf2WyOFB4="
       },
       "power": "1",
       "name": "2"
     },
     {
-      "address": "804E895175E0A2BB54D0ABB55850CFB946093F3A",
+      "address": "6E765A6687E7F0C21FA55DA75071288102A691FC",
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "Zf0hCrQYLZDNxh0FPuK6kZ/dRQS0mKmd19AzO3xz4SY="
+        "value": "TFC6sMFZORrKOkgWAQai+Fz+6XyooJGhSpddqtclJrY="
       },
       "power": "1",
       "name": "3"
@@ -106,99 +106,99 @@
     },
     "balances": [
       {
-        "address": "0x736ddc3484af10d1f0a98052211047225c117b72",
+        "address": "0x825280ecd0d3b245a67a21cde957d88c884898aa",
         "currency": "OLT",
         "amount": "250000000000000000000000000"
       },
       {
-        "address": "0x736ddc3484af10d1f0a98052211047225c117b72",
+        "address": "0x825280ecd0d3b245a67a21cde957d88c884898aa",
         "currency": "VT",
         "amount": "100"
       },
       {
-        "address": "0x09228632de2e520f427e18337a9665ba738885b0",
+        "address": "0x8b49aa32c2d571b8127889af52783b721d0034cd",
         "currency": "OLT",
         "amount": "250000000000000000000000000"
       },
       {
-        "address": "0x09228632de2e520f427e18337a9665ba738885b0",
+        "address": "0x8b49aa32c2d571b8127889af52783b721d0034cd",
         "currency": "VT",
         "amount": "100"
       },
       {
-        "address": "0x30d573b90d23292c27e00371e0cea2d840bad65e",
+        "address": "0xd8777a384419833419c8bd01614f4d8012805506",
         "currency": "OLT",
         "amount": "250000000000000000000000000"
       },
       {
-        "address": "0x30d573b90d23292c27e00371e0cea2d840bad65e",
+        "address": "0xd8777a384419833419c8bd01614f4d8012805506",
         "currency": "VT",
         "amount": "100"
       },
       {
-        "address": "0xdc95f7c49d1e6976dddfb5d46816f3c9991d1c17",
+        "address": "0xa98e1e10204d833c10a0599aadf14540323ddb65",
         "currency": "OLT",
         "amount": "250000000000000000000000000"
       },
       {
-        "address": "0xdc95f7c49d1e6976dddfb5d46816f3c9991d1c17",
+        "address": "0xa98e1e10204d833c10a0599aadf14540323ddb65",
         "currency": "VT",
         "amount": "100"
       }
     ],
     "staking": [
       {
-        "ValidatorAddress": "0x16ac8a3f9211268703b081daab90c03ca4bbc91a",
-        "StakeAddress": "0x736ddc3484af10d1f0a98052211047225c117b72",
+        "ValidatorAddress": "0xde0bac6d291f3d82b1da045619e0cfae0ce2977d",
+        "StakeAddress": "0x825280ecd0d3b245a67a21cde957d88c884898aa",
         "Pubkey": {
           "keyType": "ed25519",
-          "data": "sgs5GDlMjpr64Tc1qFZIc98XkfveJkBOqfw53sZ6t7E="
+          "data": "688Yb1JaocRbAe7Of0IZNbvyi+XsHfPtlue3ynakc10="
         },
         "ECDSAPubKey": {
           "keyType": "btcecsecp",
-          "data": "AgKMzEohzi1I4HF9a1/fW7n5ZqchoN8qAnfRxEO9cNMB"
+          "data": "A79Z59gc746vyl6HGwlP73pwXCFImb1UaC9FApB+pQBx"
         },
         "Name": "0",
         "Amount": "1"
       },
       {
-        "ValidatorAddress": "0x0c198e7a86ff6bef72f81a92d955e92c4bfbcbd0",
-        "StakeAddress": "0x09228632de2e520f427e18337a9665ba738885b0",
+        "ValidatorAddress": "0xc40248cf3e833b17483d873d4fa4769ca9ad9213",
+        "StakeAddress": "0x8b49aa32c2d571b8127889af52783b721d0034cd",
         "Pubkey": {
           "keyType": "ed25519",
-          "data": "q0inJjot8B6Kv/2ULYp1ADNigk+Xe2FOGsHZdl3KMJc="
+          "data": "KZKF+1PGsg9DRIwCvMlX06unp7EVRfQSObNRNYZ4kuw="
         },
         "ECDSAPubKey": {
           "keyType": "btcecsecp",
-          "data": "AgxstE4G2ZWbFRitj/1KBMu2T4Ia3q7euIPC0grngMsA"
+          "data": "Au78iOmORDx1XuwS2PMAd5Vu6JcSGQ5TKcRIo1/D1frw"
         },
         "Name": "1",
         "Amount": "1"
       },
       {
-        "ValidatorAddress": "0x035710441a19b877d67778ef547d3d57a2713348",
-        "StakeAddress": "0x30d573b90d23292c27e00371e0cea2d840bad65e",
+        "ValidatorAddress": "0x03a9c2640a47d7a845b6c46db61bcc15eb488b96",
+        "StakeAddress": "0xd8777a384419833419c8bd01614f4d8012805506",
         "Pubkey": {
           "keyType": "ed25519",
-          "data": "3a9tDC5DQfztl1O+HyAeR3VcZtw8nAtY26s/KhujPuA="
+          "data": "v3bcM7Q2HfoYOMC5u9YCHHO+e1O3lgEEbikf2WyOFB4="
         },
         "ECDSAPubKey": {
           "keyType": "btcecsecp",
-          "data": "AxXBJ7H+VvmK7Au+RQi95cTSjcQJIaWHYztIfviNLNyv"
+          "data": "A7caCLwoPoQXN5u0fX/EFTW720YCSJu7ALImcU9kakgu"
         },
         "Name": "2",
         "Amount": "1"
       },
       {
-        "ValidatorAddress": "0x804e895175e0a2bb54d0abb55850cfb946093f3a",
-        "StakeAddress": "0xdc95f7c49d1e6976dddfb5d46816f3c9991d1c17",
+        "ValidatorAddress": "0x6e765a6687e7f0c21fa55da75071288102a691fc",
+        "StakeAddress": "0xa98e1e10204d833c10a0599aadf14540323ddb65",
         "Pubkey": {
           "keyType": "ed25519",
-          "data": "Zf0hCrQYLZDNxh0FPuK6kZ/dRQS0mKmd19AzO3xz4SY="
+          "data": "TFC6sMFZORrKOkgWAQai+Fz+6XyooJGhSpddqtclJrY="
         },
         "ECDSAPubKey": {
           "keyType": "btcecsecp",
-          "data": "AkLpLFqJm2lu6RtrFANjqrZk9fzREswcjaZReiRVI6x9"
+          "data": "ApvPUDxQ/8wScHwKupPOaKSJQzYjZdOOpjal3a1iPjKv"
         },
         "Name": "3",
         "Amount": "1"
