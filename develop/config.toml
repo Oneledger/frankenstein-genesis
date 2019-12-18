@@ -1,35 +1,41 @@
 [node]
-  node_name = "0"
+  node_name = "1-Sentry"
   # Fast sync allows a block to catch up quickly to the chain by downloading blocks in parallel and verifying their commits
   fast_sync = true
   # Specify what backend database to use (goleveldb|cleveldb)
   db = "cleveldb"
   # Specify the application database directory. This is always relative to the root directory of the app.
   db_dir = "nodedata"
+  # Specify the log level for olfullnode. 0: Fatal, 1: Error, 2: Warning, 3: Info, 4: Debug, 5: Detail
+  loglevel = 3
   # List of transaction tags to index in the database, allows them to be searched by the specified tags
   index_tags = []
   # Tells the indexer to index all available tags, IndexTags has precedence over IndexAllTags
   index_all_tags = false
+  # List of services used by the current Node. Possible valued [broadcast, node, owner, query, tx]
+  services = ["broadcast", "node", "owner", "query", "tx", "btc", "eth"]
+  # (ED25519 key) This private key will be used to generate a token for authentication through RPC Port.
+  rpc_private_key = ""
 
 [network]
-  rpc_address = "tcp://127.0.0.1:26600"
+  rpc_address = "tcp://10.11.0.2:26604"
   # Main address for P2P connections
-  p2p_address = "tcp://127.0.0.1:26601"
+  p2p_address = "tcp://10.11.0.2:26605"
   # Address to advertise for incoming peers to connect to
-  external_p2p_address = "tcp://34.73.232.34:26605"
-  sdk_address = "http://127.0.0.1:26602"
+  external_p2p_address = "tcp://34.74.148.163:26605"
+  sdk_address = "tcp://10.11.0.2:26602"
   btc_address = "tcp://127.0.0.1:NONE"
   eth_address = "NONE"
-  olvm_address = "tcp://127.0.0.1:26603"
+  olvm_address = "tcp://127.0.0.1:26641"
   olvm_protocol = "tcp"
 
 [p2p]
   # List of seed nodes to connect to
-  seeds = ["1d2fcff0daa60a1f7cc1a4d5e8f67ab47b182c05@35.245.204.124:26605"]
+  seeds = []
   # Enables seed mode, which will make the node crawl the network looking for peers
   seed_mode = false
   # List of peers to maintain a persistent connection to
-  persistent_peers = []
+  persistent_peers = ["468687158a4074cf2cc9e8ac2e891ed11f32012e@10.10.3.107:26605", "09fd1493ccbffab5e7afc85d47685ad1de7d945c@10.10.4.185:26605", "ade597faa06684b97a898834dd53a61daf651de4@10.11.0.4:26605", "e0f8cbf01b501709904160666f769bbb678fbc5d@10.11.1.2:26605"]
   # Enable UPNP port forwarding
   upnp = false
   # Set true for strict address routability rules. If true, the node will fail to start if the given P2P address isn't routable'
@@ -49,10 +55,10 @@
   # Set true to enable the peer-exchange reactor
   pex = true
   # List of peer IDs to keep private (will not be gossiped to other peers)
-  private_peer_ids = []
+  private_peer_ids = ["468687158a4074cf2cc9e8ac2e891ed11f32012e", "09fd1493ccbffab5e7afc85d47685ad1de7d945c", "ade597faa06684b97a898834dd53a61daf651de4", "e0f8cbf01b501709904160666f769bbb678fbc5d"]
   # Toggle to disable guard against peers connecting from the same IP
   allow_duplicate_ip = true
-  # In milliseconds
+    # In milliseconds
   handshake_timeout = 20000
   # In milliseconds
   dial_timeout = 3000
@@ -82,9 +88,27 @@
   # Should this node create empty blocks
   create_empty_blocks = true
   # Interval between empty block creation in milliseconds
-  create_empty_blocks_interval = 10000
+  create_empty_blocks_interval = 0
   # Duration values in milliseconds
   peer_gossip_sleep_duration = 100
   peer_query_maj23_sleep_duration = 2000
   # Block time parameter, corresponds to the minimum time increment between consecutive blocks
   blocktime_iota = 0
+
+[chain_driver]
+  # bitcoin chain types, mainnet, testnet3, or regtest
+  bitcoin_chain_type = "testnet3"
+  # ip address of bitcoin node
+  bitcoin_node_address = "34.74.207.115"
+  # rpc port of bitcoin node
+  "bitcoin rpc_port" = "18332"
+  # rpc username of bitcoin node
+  bitcoin_rpc_username = "admin1"
+  # rpc password of bitcoin node
+  bitcoin_rpc_password = "password"
+  # token to use blockcypher APIs
+  blockcypher_token = "e61acdee14e749a2b74e366cfc4373dd"
+
+[ethereum_chain_driver]
+  # ethereum node connection url default: http://localhost:7545
+  connection = "http://localhost:7545"
