@@ -22,7 +22,7 @@
   # Main address for P2P connections
   p2p_address = "tcp://10.11.0.2:26605"
   # Address to advertise for incoming peers to connect to
-  external_p2p_address = "tcp://104.196.71.88:26605"
+  external_p2p_address = ""
   sdk_address = "tcp://10.11.0.2:26602"
   btc_address = "tcp://127.0.0.1:NONE"
   eth_address = "NONE"
@@ -31,11 +31,11 @@
 
 [p2p]
   # List of seed nodes to connect to
-  seeds = []
+  seeds = ["6e5de3a29b95fb079f40d4784c0f142b2eb94896@54.87.94.239:26605", "9676fe8df72a29f87e43266aa9684981d51b1222@34.73.81.252:26605"]
   # Enables seed mode, which will make the node crawl the network looking for peers
   seed_mode = false
   # List of peers to maintain a persistent connection to
-  persistent_peers = ["9022e8b022880e329d4a9ee891f81cb77482b98b@10.10.3.149:26605", "f57575a14a3c7ac7ea3cf26c0d2aeb6f437ef25f@10.10.4.143:26605", "e7493fd2c188990e5a040c243f90c2d9f5dece0e@10.11.0.4:26605", "a69c9e3f9eeede08222c0c735912bb13454b4e84@10.11.1.2:26605"]
+  persistent_peers = ["c2f6c7bc9010a3c548dbd58a7d2e40b930a22955@10.10.3.17:26605", "98f0c1b9fc5c562fc1680ffff12e629c1ba9965d@10.10.4.127:26605", "18098f35e81a9ffe9e99c3fc303cae01667004be@10.11.0.4:26605", "4d2e23b5ca04687d57cec76e25f0345490549927@10.11.1.2:26605"]
   # Enable UPNP port forwarding
   upnp = false
   # Set true for strict address routability rules. If true, the node will fail to start if the given P2P address isn't routable'
@@ -55,7 +55,7 @@
   # Set true to enable the peer-exchange reactor
   pex = true
   # List of peer IDs to keep private (will not be gossiped to other peers)
-  private_peer_ids = ["9022e8b022880e329d4a9ee891f81cb77482b98b", "f57575a14a3c7ac7ea3cf26c0d2aeb6f437ef25f", "e7493fd2c188990e5a040c243f90c2d9f5dece0e", "a69c9e3f9eeede08222c0c735912bb13454b4e84"]
+  private_peer_ids = ["c2f6c7bc9010a3c548dbd58a7d2e40b930a22955", "98f0c1b9fc5c562fc1680ffff12e629c1ba9965d", "18098f35e81a9ffe9e99c3fc303cae01667004be", "4d2e23b5ca04687d57cec76e25f0345490549927"]
   # Toggle to disable guard against peers connecting from the same IP
   allow_duplicate_ip = true
   # In milliseconds
