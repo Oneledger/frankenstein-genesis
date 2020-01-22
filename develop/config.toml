@@ -18,12 +18,12 @@
   rpc_private_key = ""
 
 [network]
-  rpc_address = "tcp://10.11.0.2:26604"
+  rpc_address = "tcp://localhost:26604"
   # Main address for P2P connections
-  p2p_address = "tcp://10.11.0.2:26605"
+  p2p_address = "tcp://10.11.0.3:26605"
   # Address to advertise for incoming peers to connect to
-  external_p2p_address = "tcp://34.74.148.163:26605"
-  sdk_address = "tcp://10.11.0.2:26602"
+  external_p2p_address = "tcp://104.196.157.208:26605"
+  sdk_address = "tcp://10.11.0.3:26602"
   btc_address = "tcp://127.0.0.1:NONE"
   eth_address = "NONE"
   olvm_address = "tcp://127.0.0.1:26641"
@@ -31,11 +31,11 @@
 
 [p2p]
   # List of seed nodes to connect to
-  seeds = []
+  seeds = ["4d64ca33b272528e18b37d07c7022f412ea1efc1@3.227.97.163:26605", "3f589fa07a86c2389f86a7c12d2d8ac537f3f3d1@104.196.25.22:26605"]
   # Enables seed mode, which will make the node crawl the network looking for peers
   seed_mode = false
   # List of peers to maintain a persistent connection to
-  persistent_peers = ["468687158a4074cf2cc9e8ac2e891ed11f32012e@10.10.3.107:26605", "09fd1493ccbffab5e7afc85d47685ad1de7d945c@10.10.4.185:26605", "ade597faa06684b97a898834dd53a61daf651de4@10.11.0.4:26605", "e0f8cbf01b501709904160666f769bbb678fbc5d@10.11.1.2:26605"]
+  persistent_peers = ["91461020027158dad28a3feefb1e115eb3316834@10.10.3.33:26605", "9080dd63a8ebef185c2f8eaf7e6f7c448a7618db@10.10.4.81:26605", "23885dd076c3e14805c5b5c2851d8413456d6b32@10.11.0.4:26605", "59c31408f56db17bfa194aeaec7c69fbd05a8ea4@10.11.1.2:26605"]
   # Enable UPNP port forwarding
   upnp = false
   # Set true for strict address routability rules. If true, the node will fail to start if the given P2P address isn't routable'
@@ -55,10 +55,10 @@
   # Set true to enable the peer-exchange reactor
   pex = true
   # List of peer IDs to keep private (will not be gossiped to other peers)
-  private_peer_ids = ["468687158a4074cf2cc9e8ac2e891ed11f32012e", "09fd1493ccbffab5e7afc85d47685ad1de7d945c", "ade597faa06684b97a898834dd53a61daf651de4", "e0f8cbf01b501709904160666f769bbb678fbc5d"]
+  private_peer_ids = ["91461020027158dad28a3feefb1e115eb3316834", "9080dd63a8ebef185c2f8eaf7e6f7c448a7618db", "23885dd076c3e14805c5b5c2851d8413456d6b32", "59c31408f56db17bfa194aeaec7c69fbd05a8ea4"]
   # Toggle to disable guard against peers connecting from the same IP
   allow_duplicate_ip = true
-    # In milliseconds
+  # In milliseconds
   handshake_timeout = 20000
   # In milliseconds
   dial_timeout = 3000
