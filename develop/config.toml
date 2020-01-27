@@ -31,7 +31,7 @@
 
 [p2p]
   # List of seed nodes to connect to
-  seeds = ["4d435679ea33cd76b37287a29bb8f02f904bf0f8@35.245.204.124:26605"]
+  seeds = ["a634b0612826f8f63a0fb371243a65d10f7ee7fb@35.245.204.124:26605"]
   # Enables seed mode, which will make the node crawl the network looking for peers
   seed_mode = false
   # List of peers to maintain a persistent connection to
@@ -111,4 +111,4 @@
 
 [ethereum_chain_driver]
   # ethereum node connection url default: http://localhost:7545
-  connection = "http://localhost:7545"
+  connection = "https://rinkeby.infura.io/v3/de5e96cbb6284d5ea1341bf6cb7fa401"
