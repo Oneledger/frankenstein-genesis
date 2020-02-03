@@ -1,5 +1,5 @@
 [node]
-  node_name = "0"
+  node_name = ""
   # Fast sync allows a block to catch up quickly to the chain by downloading blocks in parallel and verifying their commits
   fast_sync = true
   # Specify what backend database to use (goleveldb|cleveldb)
@@ -18,24 +18,24 @@
   rpc_private_key = ""
 
 [network]
-  rpc_address = "tcp://127.0.0.1:26600"
+  rpc_address = "tcp://127.0.0.1:26604"
   # Main address for P2P connections
-  p2p_address = "tcp://127.0.0.1:26601"
+  p2p_address = "tcp://127.0.0.1:26605"
   # Address to advertise for incoming peers to connect to
-  external_p2p_address = "tcp://35.229.111.129:26605"
-  sdk_address = "http://127.0.0.1:26602"
+  external_p2p_address = ""
+  sdk_address = "tcp://127.0.0.1:26602"
   btc_address = "tcp://127.0.0.1:NONE"
   eth_address = "NONE"
-  olvm_address = "tcp://127.0.0.1:26603"
+  olvm_address = "tcp://127.0.0.1:26641"
   olvm_protocol = "tcp"
 
 [p2p]
   # List of seed nodes to connect to
-  seeds = ["12e8226e081262453d9ee474f090b4075acabce3@35.245.204.124:26605"]
+  seeds = ["b3f1b11e8ab504388fc69d3f9479fe021d29b998@35.238.24.213:26605"]
   # Enables seed mode, which will make the node crawl the network looking for peers
   seed_mode = false
   # List of peers to maintain a persistent connection to
-  persistent_peers = []
+  persistent_peers = ["4da68900c714ea28943b8651b289d475559d3d01@104.154.30.20:26605"]
   # Enable UPNP port forwarding
   upnp = false
   # Set true for strict address routability rules. If true, the node will fail to start if the given P2P address isn't routable'
@@ -88,7 +88,7 @@
   # Should this node create empty blocks
   create_empty_blocks = true
   # Interval between empty block creation in milliseconds
-  create_empty_blocks_interval = 10000
+  create_empty_blocks_interval = 0
   # Duration values in milliseconds
   peer_gossip_sleep_duration = 100
   peer_query_maj23_sleep_duration = 2000
@@ -110,5 +110,5 @@
   blockcypher_token = "e61acdee14e749a2b74e366cfc4373dd"
 
 [ethereum_chain_driver]
-  # ethereum node connection url default: http://localhost:7545
-  connection = ""
+  # ethereum node connection url default: http://127.0.0.1:7545
+  connection = "https://rinkeby.infura.io/v3/de5e96cbb6284d5ea1341bf6cb7fa401"
