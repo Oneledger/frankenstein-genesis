@@ -18,12 +18,12 @@
   rpc_private_key = ""
 
 [network]
-  rpc_address = "tcp://localhost:26604"
+  rpc_address = "tcp://127.0.0.1:26604"
   # Main address for P2P connections
-  p2p_address = "tcp://localhost:26605"
+  p2p_address = "tcp://127.0.0.1:26605"
   # Address to advertise for incoming peers to connect to
-  external_p2p_address = "tcp://34.73.183.206:26605"
-  sdk_address = "tcp://localhost:26602"
+  external_p2p_address = ""
+  sdk_address = "tcp://127.0.0.1:26602"
   btc_address = "tcp://127.0.0.1:NONE"
   eth_address = "NONE"
   olvm_address = "tcp://127.0.0.1:26641"
@@ -31,11 +31,11 @@
 
 [p2p]
   # List of seed nodes to connect to
-  seeds = ["6bcd9125c095f7c22eacf70cface3985ad932fd2@52.0.238.28:26605", "3e6f481a5e99e2eb3c4a2aa66c074fb18ecb90cc@35.243.252.107:26605"]
+  seeds = ["a1222645b3b9633284958be6012cc7831df73cd7@52.0.238.28:26605", "534853f523802dbfd85bb379e7029932e07ed3bd@35.243.252.107:26605"]
   # Enables seed mode, which will make the node crawl the network looking for peers
   seed_mode = false
   # List of peers to maintain a persistent connection to
-  persistent_peers = ["8f48a4e7972cc670a72e5f65bcd0b1562b4a4452@52.206.5.200:26605","2e4d39a91daa107cf058adf4860079dad93030e4@34.73.183.206:26605"]
+  persistent_peers = ["80e6427c773cf8a96712cd11c0b2216dcf9ace31@52.206.5.200:26605","1619228c7c66b859cc9d632967fd5f7c9a7e8eef@34.73.183.206:26605"]
   # Enable UPNP port forwarding
   upnp = false
   # Set true for strict address routability rules. If true, the node will fail to start if the given P2P address isn't routable'
@@ -111,4 +111,4 @@
 
 [ethereum_chain_driver]
   # ethereum node connection url default: http://localhost:7545
-  connection = ""
+  connection = "https://rinkeby.infura.io/v3/de5e96cbb6284d5ea1341bf6cb7fa401"

@@ -1,6 +1,6 @@
 {
-  "genesis_time": "2020-01-31T16:46:26.460454938Z",
-  "chain_id": "OneLedger-7ae1",
+  "genesis_time": "2020-02-04T22:31:16.809433098Z",
+  "chain_id": "OneLedger-a7ca",
   "consensus_params": {
     "block": {
       "max_bytes": "22020096",
@@ -18,37 +18,37 @@
   },
   "validators": [
     {
-      "address": "C2EB457A8050FFCFA9C612246EAAD4F9263A19DE",
+      "address": "23628F3D0778DD44BE600AE5FB90C99055D4DF18",
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "wkRwmu/lc4+xbAlx+v49gjJyLO2b9kR7mXT8XgfFyj0="
+        "value": "2GOU4x2jP6kT/eUTBp/nXl2ZEOkvgyrJluwworMtWOg="
       },
       "power": "1",
       "name": "0"
     },
     {
-      "address": "5B235841706CE6F260ECA03E046EE3CE46E34D0B",
+      "address": "503AA1BF5A5A407290F39527430EFF63BE53B97D",
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "gMVHI904v2pb1vkrcBhhaPs+ondQV7W5yGAITXq4/Aw="
+        "value": "g4mNr+QAkVGbBjqkP266CLMqNczThMGiqCa+Ir8B75M="
       },
       "power": "1",
       "name": "1"
     },
     {
-      "address": "42EDDCABE322B376B82C481E892A18AE528F16E6",
+      "address": "B27D7BDB2EF6F1B0349B771491AA7A4A51C9AFA3",
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "muxY+Sf6mb5KL9F8p57roR8+BdLBMdayLJ0tF1xKipA="
+        "value": "M+B/U1BvIMyG2/XovwqneOySkdpt/NtyJVk+4+VzO9k="
       },
       "power": "1",
       "name": "2"
     },
     {
-      "address": "5FC8595F7FB209BAD50DD6E756C9E6B0BB960E45",
+      "address": "7F128BCFCB77584600C495D0E1C27EAAAA6F0D2B",
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "uM661BTCN8xBoRv+mR+gvGIb8xTiK4zcQ42IRRYhQHI="
+        "value": "dDwEdGh5r4AW8kc1fvO/SrLM0BZ22ElsCaIaHnJ2UtU="
       },
       "power": "1",
       "name": "3"
@@ -98,7 +98,7 @@
     },
     "ethchaindriverOption": {
       "ContractABI": "[{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"address\"}],\"name\":\"removeValidatorProposals\",\"outputs\":[{\"name\":\"voteCount\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"epochBlockHeight\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"newThresholdProposals\",\"outputs\":[{\"name\":\"voteCount\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"v\",\"type\":\"address\"}],\"name\":\"proposeRemoveValidator\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getTotalEthBalance\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"recipient_\",\"type\":\"address\"}],\"name\":\"hasValidatorSigned\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"v\",\"type\":\"address\"}],\"name\":\"proposeAddValidator\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getOLTEthAddress\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"numValidators\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"votingThreshold\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"recipient_\",\"type\":\"address\"}],\"name\":\"getSignatureCount\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"amount_\",\"type\":\"uint256\"},{\"name\":\"recipient_\",\"type\":\"address\"}],\"name\":\"sign\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"recipient_\",\"type\":\"address\"}],\"name\":\"verifyRedeem\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"address\"}],\"name\":\"addValidatorProposals\",\"outputs\":[{\"name\":\"voteCount\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"amount_\",\"type\":\"uint256\"}],\"name\":\"redeem\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"threshold\",\"type\":\"uint256\"}],\"name\":\"proposeNewThreshold\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"lock\",\"outputs\":[],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"address\"}],\"name\":\"validators\",\"outputs\":[{\"name\":\"\",\"type\":\"int256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"addr\",\"type\":\"address\"}],\"name\":\"isValidator\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"name\":\"initialValidators\",\"type\":\"address[]\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"_address\",\"type\":\"address\"},{\"indexed\":false,\"name\":\"_power\",\"type\":\"int256\"}],\"name\":\"AddValidator\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"recepient\",\"type\":\"address\"},{\"indexed\":false,\"name\":\"amount_requested\",\"type\":\"uint256\"}],\"name\":\"RedeemRequest\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"recipient\",\"type\":\"address\"},{\"indexed\":false,\"name\":\"validator_addresss\",\"type\":\"address\"},{\"indexed\":false,\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"ValidatorSignedRedeem\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"_address\",\"type\":\"address\"}],\"name\":\"DeleteValidator\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"name\":\"epochHeight\",\"type\":\"uint256\"}],\"name\":\"NewEpoch\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"name\":\"sender\",\"type\":\"address\"},{\"indexed\":false,\"name\":\"amount_received\",\"type\":\"uint256\"}],\"name\":\"Lock\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"name\":\"_prevThreshold\",\"type\":\"uint256\"},{\"indexed\":false,\"name\":\"_newThreshold\",\"type\":\"uint256\"}],\"name\":\"NewThreshold\",\"type\":\"event\"}]",
-      "ContractAddress": "0xaec5a000112ed5312ff492e2a0ac4d56e5205213"
+      "ContractAddress": "0xdbf7b1876549163ebbf366cb26e207769df6bd5c"
     },
     "state": {
       "Version": 0,
@@ -106,99 +106,99 @@
     },
     "balances": [
       {
-        "address": "0x0b146f44e57f1b2bb52cb71fd4bd7a31e8d1d051",
+        "address": "0x9487a433dcd65e430b02cfbd5e9d734cfff785cd",
         "currency": "OLT",
         "amount": "250000000000000000000000000"
       },
       {
-        "address": "0x0b146f44e57f1b2bb52cb71fd4bd7a31e8d1d051",
+        "address": "0x9487a433dcd65e430b02cfbd5e9d734cfff785cd",
         "currency": "VT",
         "amount": "100"
       },
       {
-        "address": "0x9b17d755224cf7fbef82b208773d9b27c1d0b65a",
+        "address": "0x97721f9ae465191fc55926f5e958cc8a332ed839",
         "currency": "OLT",
         "amount": "250000000000000000000000000"
       },
       {
-        "address": "0x9b17d755224cf7fbef82b208773d9b27c1d0b65a",
+        "address": "0x97721f9ae465191fc55926f5e958cc8a332ed839",
         "currency": "VT",
         "amount": "100"
       },
       {
-        "address": "0xc7e718ea6e72653105862c83bb2021656b070bb4",
+        "address": "0xcd0a75bb58cbf1e4c2e9f6cb68a7b069e6db90e8",
         "currency": "OLT",
         "amount": "250000000000000000000000000"
       },
       {
-        "address": "0xc7e718ea6e72653105862c83bb2021656b070bb4",
+        "address": "0xcd0a75bb58cbf1e4c2e9f6cb68a7b069e6db90e8",
         "currency": "VT",
         "amount": "100"
       },
       {
-        "address": "0x34abe55e7d8b7c98b570eb91b2d9ce65b124c65f",
+        "address": "0x4e367df63a7c8cdf496eb250444a4b40ffea2a09",
         "currency": "OLT",
         "amount": "250000000000000000000000000"
       },
       {
-        "address": "0x34abe55e7d8b7c98b570eb91b2d9ce65b124c65f",
+        "address": "0x4e367df63a7c8cdf496eb250444a4b40ffea2a09",
         "currency": "VT",
         "amount": "100"
       }
     ],
     "staking": [
       {
-        "ValidatorAddress": "0xc2eb457a8050ffcfa9c612246eaad4f9263a19de",
-        "StakeAddress": "0x0b146f44e57f1b2bb52cb71fd4bd7a31e8d1d051",
+        "ValidatorAddress": "0x23628f3d0778dd44be600ae5fb90c99055d4df18",
+        "StakeAddress": "0x9487a433dcd65e430b02cfbd5e9d734cfff785cd",
         "Pubkey": {
           "keyType": "ed25519",
-          "data": "wkRwmu/lc4+xbAlx+v49gjJyLO2b9kR7mXT8XgfFyj0="
+          "data": "2GOU4x2jP6kT/eUTBp/nXl2ZEOkvgyrJluwworMtWOg="
         },
         "ECDSAPubKey": {
           "keyType": "btcecsecp",
-          "data": "AqvnO+MFbAyqw1z3GhJ3w7BWT2t7/CGLxb4XUEHoCqvt"
+          "data": "A9/IbVykWSOPWDHA4NN/4v675ZkLE6f7V/v/lNM/QPnA"
         },
         "Name": "0",
         "Amount": "1"
       },
       {
-        "ValidatorAddress": "0x5b235841706ce6f260eca03e046ee3ce46e34d0b",
-        "StakeAddress": "0x9b17d755224cf7fbef82b208773d9b27c1d0b65a",
+        "ValidatorAddress": "0x503aa1bf5a5a407290f39527430eff63be53b97d",
+        "StakeAddress": "0x97721f9ae465191fc55926f5e958cc8a332ed839",
         "Pubkey": {
           "keyType": "ed25519",
-          "data": "gMVHI904v2pb1vkrcBhhaPs+ondQV7W5yGAITXq4/Aw="
+          "data": "g4mNr+QAkVGbBjqkP266CLMqNczThMGiqCa+Ir8B75M="
         },
         "ECDSAPubKey": {
           "keyType": "btcecsecp",
-          "data": "Aw8LDess2fyadzz9oxz00INCQsjgYXOpKW2GCEo+9kyI"
+          "data": "A3kBuM1xOGR4fzaS1rZBegyqXdr2viLahTHnExfY9q0q"
         },
         "Name": "1",
         "Amount": "1"
       },
       {
-        "ValidatorAddress": "0x42eddcabe322b376b82c481e892a18ae528f16e6",
-        "StakeAddress": "0xc7e718ea6e72653105862c83bb2021656b070bb4",
+        "ValidatorAddress": "0xb27d7bdb2ef6f1b0349b771491aa7a4a51c9afa3",
+        "StakeAddress": "0xcd0a75bb58cbf1e4c2e9f6cb68a7b069e6db90e8",
         "Pubkey": {
           "keyType": "ed25519",
-          "data": "muxY+Sf6mb5KL9F8p57roR8+BdLBMdayLJ0tF1xKipA="
+          "data": "M+B/U1BvIMyG2/XovwqneOySkdpt/NtyJVk+4+VzO9k="
         },
         "ECDSAPubKey": {
           "keyType": "btcecsecp",
-          "data": "AuKCU43ZtnvpFpUej3GiSOc7oSRZQW9iVlbdArbGOTxZ"
+          "data": "A0Y5rVOCwiRlDyGbdYwM/aum0WFsdvw1gfeJJ59Ajx3R"
         },
         "Name": "2",
         "Amount": "1"
       },
       {
-        "ValidatorAddress": "0x5fc8595f7fb209bad50dd6e756c9e6b0bb960e45",
-        "StakeAddress": "0x34abe55e7d8b7c98b570eb91b2d9ce65b124c65f",
+        "ValidatorAddress": "0x7f128bcfcb77584600c495d0e1c27eaaaa6f0d2b",
+        "StakeAddress": "0x4e367df63a7c8cdf496eb250444a4b40ffea2a09",
         "Pubkey": {
           "keyType": "ed25519",
-          "data": "uM661BTCN8xBoRv+mR+gvGIb8xTiK4zcQ42IRRYhQHI="
+          "data": "dDwEdGh5r4AW8kc1fvO/SrLM0BZ22ElsCaIaHnJ2UtU="
         },
         "ECDSAPubKey": {
           "keyType": "btcecsecp",
-          "data": "A85ERY3liExGH2DF0/cVB2NVA+iwIrpYQUvxV3PoC0xP"
+          "data": "A7+G5EKmhS0bxb3vg8+bVD770DCWhcWvp9UabCqEYQjA"
         },
         "Name": "3",
         "Amount": "1"
