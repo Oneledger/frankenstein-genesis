@@ -31,11 +31,11 @@
 
 [p2p]
   # List of seed nodes to connect to
-  seeds = ["b3f1b11e8ab504388fc69d3f9479fe021d29b998@35.238.24.213:26605"]
+  seeds = ["ce39571d2bae94dbe0fd695420c48635aab3d7f8@35.238.24.213:26605"]
   # Enables seed mode, which will make the node crawl the network looking for peers
   seed_mode = false
   # List of peers to maintain a persistent connection to
-  persistent_peers = ["4da68900c714ea28943b8651b289d475559d3d01@104.154.30.20:26605"]
+  persistent_peers = []
   # Enable UPNP port forwarding
   upnp = false
   # Set true for strict address routability rules. If true, the node will fail to start if the given P2P address isn't routable'
@@ -110,5 +110,5 @@
   blockcypher_token = "e61acdee14e749a2b74e366cfc4373dd"
 
 [ethereum_chain_driver]
-  # ethereum node connection url default: http://127.0.0.1:7545
+  # ethereum node connection url default: http://localhost:7545
   connection = "https://rinkeby.infura.io/v3/de5e96cbb6284d5ea1341bf6cb7fa401"
