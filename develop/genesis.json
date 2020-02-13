@@ -1,6 +1,6 @@
 {
-  "genesis_time": "2020-02-06T18:50:04.643977104Z",
-  "chain_id": "OneLedger-56c8",
+  "genesis_time": "2020-02-13T17:40:54.690284935Z",
+  "chain_id": "OneLedger-d9cf",
   "consensus_params": {
     "block": {
       "max_bytes": "22020096",
@@ -18,37 +18,37 @@
   },
   "validators": [
     {
-      "address": "594AB3030EC5603218E465C33E2CD690228DDA88",
+      "address": "94AA475E7052D9A5C8093E597C4BCF6AD62E3813",
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "kVBvgKEvEJb537FpfImQLFhw0GayUsR07Hzitv/Faj8="
+        "value": "Izt17CupI7DIjS2UQoRa2faEXfXRT2/rB9P5PDr300s="
       },
       "power": "1",
       "name": "0"
     },
     {
-      "address": "E1028C0AB686F5F9A10E9D22DB3AA63D00F9DE5D",
+      "address": "D94D9CFAEB4A9CF86D311213746972EFACB6D6EA",
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "CQ+vtdCwCAMuf+VyL1NNst0lE/Ie5cjwnaCy11a3HSM="
+        "value": "woekM4AXe5QOE9+zAhQfOuWiw4rVVhtRcCLaudxmoAk="
       },
       "power": "1",
       "name": "1"
     },
     {
-      "address": "032AB37208048552834967235A1BAAB1CE4C77D3",
+      "address": "266764D53D85E392FAAC9044864F3D0D566084A1",
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "o1Rwo5N1XcjuPZfZKN1gs/Y41c3ieHUIIpn6lUaz7eE="
+        "value": "eak80/rptKe8Pp1ac/wrE4VxM2FSx03Xq+QC90RciIE="
       },
       "power": "1",
       "name": "2"
     },
     {
-      "address": "249382D90DFE4AB9D0244B5F55614AEAE0C7D681",
+      "address": "8CF53635BBC0ECCD9480F7F9E0DDFF3E3FCA2AC7",
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "FxOaGC0ha1lTwrJZjdKmdnHSNjSeShdj3HyH+ha3LXM="
+        "value": "NkcYFbsNdOH51sXnvhWUSQLWN7CWNF/iNRpKGxhh05M="
       },
       "power": "1",
       "name": "3"
@@ -105,16 +105,16 @@
     },
     "ethchaindriverOption": {
       "ContractABI": "[{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"removeValidatorProposals\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"voteCount\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"epochBlockHeight\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"newThresholdProposals\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"voteCount\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"v\",\"type\":\"address\"}],\"name\":\"proposeRemoveValidator\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"recepient_\",\"type\":\"address\"}],\"name\":\"isredeemAvailable\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getTotalEthBalance\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"recipient_\",\"type\":\"address\"}],\"name\":\"hasValidatorSigned\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"v\",\"type\":\"address\"}],\"name\":\"proposeAddValidator\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getOLTEthAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"numValidators\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"votingThreshold\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"recipient_\",\"type\":\"address\"}],\"name\":\"getSignatureCount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amount_\",\"type\":\"uint256\"},{\"internalType\":\"addresspayable\",\"name\":\"recipient_\",\"type\":\"address\"}],\"name\":\"sign\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"recipient_\",\"type\":\"address\"}],\"name\":\"verifyRedeem\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"addValidatorProposals\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"voteCount\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amount_\",\"type\":\"uint256\"}],\"name\":\"redeem\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"threshold\",\"type\":\"uint256\"}],\"name\":\"proposeNewThreshold\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"lock\",\"outputs\":[],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"validators\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"\",\"type\":\"int256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"addr\",\"type\":\"address\"}],\"name\":\"isValidator\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address[]\",\"name\":\"initialValidators\",\"type\":\"address[]\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"_address\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"int256\",\"name\":\"_power\",\"type\":\"int256\"}],\"name\":\"AddValidator\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"recepient\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount_requested\",\"type\":\"uint256\"}],\"name\":\"RedeemRequest\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"validator_addresss\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"ValidatorSignedRedeem\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"_address\",\"type\":\"address\"}],\"name\":\"DeleteValidator\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"epochHeight\",\"type\":\"uint256\"}],\"name\":\"NewEpoch\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"sender\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount_received\",\"type\":\"uint256\"}],\"name\":\"Lock\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"_prevThreshold\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"_newThreshold\",\"type\":\"uint256\"}],\"name\":\"NewThreshold\",\"type\":\"event\"}]",
-      "ContractAddress": "0xe332417093321fcafb219ffc0872e5db112cd436",
+      "ContractAddress": "0xf51e5a4d1060c154b4a1313b9feb9102464f1e0d",
       "TokenList": [
         {
           "TokName": "TTC",
-          "TokAddr": "0x12afd97d8c02642497f67f2c193c7dee047a35fc",
+          "TokAddr": "0xaf4cdb3dc9a126ede632110009c3f6462bfdb5ec",
           "TokAbi": "[{\"constant\":true,\"inputs\":[],\"name\":\"name\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"delegate\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"numTokens\",\"type\":\"uint256\"}],\"name\":\"approve\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"totalSupply\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"buyer\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"numTokens\",\"type\":\"uint256\"}],\"name\":\"transferFrom\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"decimals\",\"outputs\":[{\"internalType\":\"uint8\",\"name\":\"\",\"type\":\"uint8\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"tokenOwner\",\"type\":\"address\"}],\"name\":\"balanceOf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"symbol\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"receiver\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"numTokens\",\"type\":\"uint256\"}],\"name\":\"transfer\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"delegate\",\"type\":\"address\"}],\"name\":\"allowance\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"total\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"tokenOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"spender\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"tokens\",\"type\":\"uint256\"}],\"name\":\"Approval\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"tokens\",\"type\":\"uint256\"}],\"name\":\"Transfer\",\"type\":\"event\"}]"
         }
       ],
       "ERCContractABI": "[{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"removeValidatorProposals\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"voteCount\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"epochBlockHeight\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"newThresholdProposals\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"voteCount\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"v\",\"type\":\"address\"}],\"name\":\"proposeRemoveValidator\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getOLTErcAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"tokenAddress_\",\"type\":\"address\"}],\"name\":\"executeredeem\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"recipient_\",\"type\":\"address\"}],\"name\":\"hasValidatorSigned\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"v\",\"type\":\"address\"}],\"name\":\"proposeAddValidator\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"numValidators\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"votingThreshold\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amount_\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"tokenAddress_\",\"type\":\"address\"}],\"name\":\"redeem\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amount_\",\"type\":\"uint256\"},{\"internalType\":\"addresspayable\",\"name\":\"recipient_\",\"type\":\"address\"}],\"name\":\"sign\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"recipient_\",\"type\":\"address\"}],\"name\":\"verifyRedeem\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"tokenAddress_\",\"type\":\"address\"}],\"name\":\"getTotalErcBalance\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"addValidatorProposals\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"voteCount\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"threshold\",\"type\":\"uint256\"}],\"name\":\"proposeNewThreshold\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"validators\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"\",\"type\":\"int256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"addr\",\"type\":\"address\"}],\"name\":\"isValidator\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address[]\",\"name\":\"initialValidators\",\"type\":\"address[]\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"_address\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"int256\",\"name\":\"_power\",\"type\":\"int256\"}],\"name\":\"AddValidator\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"_address\",\"type\":\"address\"}],\"name\":\"DeleteValidator\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"epochHeight\",\"type\":\"uint256\"}],\"name\":\"NewEpoch\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"recepient\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount_trafered\",\"type\":\"uint256\"}],\"name\":\"RedeemSuccessful\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"validator_addresss\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"ValidatorSignedRedeem\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"recepient\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount_requested\",\"type\":\"uint256\"}],\"name\":\"RedeemRequest\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"_prevThreshold\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"_newThreshold\",\"type\":\"uint256\"}],\"name\":\"NewThreshold\",\"type\":\"event\"}]",
-      "ERCContractAddress": "0xb047bc217ffe8a4570147c1bf941649db0c6389c"
+      "ERCContractAddress": "0x140a75eb86a607e4c19d07a87783da5491786c6c"
     },
     "bitcoinChainDriverOption": {
       "BTCChainType": "testnet3"
@@ -125,99 +125,99 @@
     },
     "balances": [
       {
-        "address": "0xcd6d76edf1fa35872d9bbb4f608776b04072cd36",
+        "address": "0x7f6314e218fe628198f28f33c129a669729021fc",
         "currency": "OLT",
         "amount": "250000000000000000000000000"
       },
       {
-        "address": "0xcd6d76edf1fa35872d9bbb4f608776b04072cd36",
+        "address": "0x7f6314e218fe628198f28f33c129a669729021fc",
         "currency": "VT",
         "amount": "100"
       },
       {
-        "address": "0xfdad183966713e60e6d01287ca54d0f4073dd4f0",
+        "address": "0xe22036c75d1f7d3c909858e37331ab281304acda",
         "currency": "OLT",
         "amount": "250000000000000000000000000"
       },
       {
-        "address": "0xfdad183966713e60e6d01287ca54d0f4073dd4f0",
+        "address": "0xe22036c75d1f7d3c909858e37331ab281304acda",
         "currency": "VT",
         "amount": "100"
       },
       {
-        "address": "0x7f3f07e14cf3322780b9782f54e83b7e82aa0e24",
+        "address": "0xaba9767ed95b0ba0c6969f31d0e67f2f19af5fb9",
         "currency": "OLT",
         "amount": "250000000000000000000000000"
       },
       {
-        "address": "0x7f3f07e14cf3322780b9782f54e83b7e82aa0e24",
+        "address": "0xaba9767ed95b0ba0c6969f31d0e67f2f19af5fb9",
         "currency": "VT",
         "amount": "100"
       },
       {
-        "address": "0x077f6beb1684647c15ad6fc961b5460c5a78716f",
+        "address": "0x3d3d8ef67baab6bb1fa7895f4ff2ad5a5c035236",
         "currency": "OLT",
         "amount": "250000000000000000000000000"
       },
       {
-        "address": "0x077f6beb1684647c15ad6fc961b5460c5a78716f",
+        "address": "0x3d3d8ef67baab6bb1fa7895f4ff2ad5a5c035236",
         "currency": "VT",
         "amount": "100"
       }
     ],
     "staking": [
       {
-        "ValidatorAddress": "0x594ab3030ec5603218e465c33e2cd690228dda88",
-        "StakeAddress": "0xcd6d76edf1fa35872d9bbb4f608776b04072cd36",
+        "ValidatorAddress": "0x94aa475e7052d9a5c8093e597c4bcf6ad62e3813",
+        "StakeAddress": "0x7f6314e218fe628198f28f33c129a669729021fc",
         "Pubkey": {
           "keyType": "ed25519",
-          "data": "kVBvgKEvEJb537FpfImQLFhw0GayUsR07Hzitv/Faj8="
+          "data": "Izt17CupI7DIjS2UQoRa2faEXfXRT2/rB9P5PDr300s="
         },
         "ECDSAPubKey": {
           "keyType": "btcecsecp",
-          "data": "A8WJ1z5TCWAbzTVd/LD7I2DTLnVhAIBzw+Zd7mAFSGBz"
+          "data": "AjbrztTfqdYIcdlUCU17hd5IY8+ozjcoUM+4tKmVeAqX"
         },
         "Name": "0",
         "Amount": "1"
       },
       {
-        "ValidatorAddress": "0xe1028c0ab686f5f9a10e9d22db3aa63d00f9de5d",
-        "StakeAddress": "0xfdad183966713e60e6d01287ca54d0f4073dd4f0",
+        "ValidatorAddress": "0xd94d9cfaeb4a9cf86d311213746972efacb6d6ea",
+        "StakeAddress": "0xe22036c75d1f7d3c909858e37331ab281304acda",
         "Pubkey": {
           "keyType": "ed25519",
-          "data": "CQ+vtdCwCAMuf+VyL1NNst0lE/Ie5cjwnaCy11a3HSM="
+          "data": "woekM4AXe5QOE9+zAhQfOuWiw4rVVhtRcCLaudxmoAk="
         },
         "ECDSAPubKey": {
           "keyType": "btcecsecp",
-          "data": "A/m5RrxAwCpHYEzvZ1uDpP0nOxlXHKtZf0wG0LxExEBu"
+          "data": "ApSYeqhlNf2K8/FuZhdHHX15oiIMbWcfd6rtiWgPPowp"
         },
         "Name": "1",
         "Amount": "1"
       },
       {
-        "ValidatorAddress": "0x032ab37208048552834967235a1baab1ce4c77d3",
-        "StakeAddress": "0x7f3f07e14cf3322780b9782f54e83b7e82aa0e24",
+        "ValidatorAddress": "0x266764d53d85e392faac9044864f3d0d566084a1",
+        "StakeAddress": "0xaba9767ed95b0ba0c6969f31d0e67f2f19af5fb9",
         "Pubkey": {
           "keyType": "ed25519",
-          "data": "o1Rwo5N1XcjuPZfZKN1gs/Y41c3ieHUIIpn6lUaz7eE="
+          "data": "eak80/rptKe8Pp1ac/wrE4VxM2FSx03Xq+QC90RciIE="
         },
         "ECDSAPubKey": {
           "keyType": "btcecsecp",
-          "data": "AqvYrKQA9vM0kigG9nzwQ0QdI6fcD6yy5mcUEBrOTQLb"
+          "data": "A8zy1+H54QQRiLQTH2WGh/Xn8i4hYiwfD68XFo4LQtbh"
         },
         "Name": "2",
         "Amount": "1"
       },
       {
-        "ValidatorAddress": "0x249382d90dfe4ab9d0244b5f55614aeae0c7d681",
-        "StakeAddress": "0x077f6beb1684647c15ad6fc961b5460c5a78716f",
+        "ValidatorAddress": "0x8cf53635bbc0eccd9480f7f9e0ddff3e3fca2ac7",
+        "StakeAddress": "0x3d3d8ef67baab6bb1fa7895f4ff2ad5a5c035236",
         "Pubkey": {
           "keyType": "ed25519",
-          "data": "FxOaGC0ha1lTwrJZjdKmdnHSNjSeShdj3HyH+ha3LXM="
+          "data": "NkcYFbsNdOH51sXnvhWUSQLWN7CWNF/iNRpKGxhh05M="
         },
         "ECDSAPubKey": {
           "keyType": "btcecsecp",
-          "data": "AwnfnxbrDZOM1+b8ux+CYsUJO4hSOyQtEKcAGygHEBKE"
+          "data": "A4lZp1ZRs+wwiCxKZh15r8gK/UuELrSNGW3xKx/0TqiV"
         },
         "Name": "3",
         "Amount": "1"
@@ -225,11 +225,11 @@
     ],
     "domains": [],
     "fees": [],
-    "ons_options": {
-      "Currency": "OLT",
-      "PerBlockFees": "100000000000000",
-      "BaseDomainPrice": "1000000000000000000000",
-      "FirstLevelDomains": [
+    "onsOptions": {
+      "currency": "OLT",
+      "perBlockFees": "100000000000000",
+      "baseDomainPrice": "1000000000000000000000",
+      "firstLevelDomains": [
         "ol"
       ]
     }
