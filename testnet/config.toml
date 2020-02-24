@@ -14,16 +14,20 @@
   index_all_tags = false
   # List of services used by the current Node. Possible valued [broadcast, node, owner, query, tx]
   services = ["broadcast", "node", "owner", "query", "tx", "btc", "eth"]
-  # (ED25519 key) This private key will be used to generate a token for authentication through RPC Port.
-  rpc_private_key = ""
+  # the OwnerCredentials and RPCPrivateKey should be configured together
+  [node.Auth]
+    # (ED25519 key) This private key will be used to generate a token for authentication through RPC Port; if not configured, anyone can access the SDK rpc port without authentication
+    rpc_private_key = ""
 
 [network]
-  rpc_address = "tcp://localhost:26604"
+  rpc_address = "tcp://127.0.0.1:26604"
+  # RPC startup timeout in seconds
+  rpc_start_timeout = 2
   # Main address for P2P connections
-  p2p_address = "tcp://localhost:26605"
+  p2p_address = "tcp://127.0.0.1:26605"
   # Address to advertise for incoming peers to connect to
   external_p2p_address = ""
-  sdk_address = "tcp://localhost:26602"
+  sdk_address = "tcp://127.0.0.1:26602"
   btc_address = "tcp://127.0.0.1:NONE"
   eth_address = "NONE"
   olvm_address = "tcp://127.0.0.1:26641"
@@ -31,11 +35,11 @@
 
 [p2p]
   # List of seed nodes to connect to
-  seeds = ["547f751648222e80f0fc9c01a8aef73ab5efd3d7@104.197.185.240:26605"]
+  seeds = ["a052fa310f55e088c17d4d4a9677717a6554e132@35.225.115.224:26605"]
   # Enables seed mode, which will make the node crawl the network looking for peers
   seed_mode = false
   # List of peers to maintain a persistent connection to
-  persistent_peers = []
+  persistent_peers = ["aad73517bf3ce96debda4498ff302b3194a37c25@35.239.40.224:26605"]
   # Enable UPNP port forwarding
   upnp = false
   # Set true for strict address routability rules. If true, the node will fail to start if the given P2P address isn't routable'
