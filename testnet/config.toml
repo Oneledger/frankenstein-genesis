@@ -16,6 +16,8 @@
   services = ["broadcast", "node", "owner", "query", "tx", "btc", "eth"]
   # the OwnerCredentials and RPCPrivateKey should be configured together
   [node.Auth]
+    # Username and Password required to access owner services. Format ["Username:Password", "Username:Password"...]. if OwnerCredential not configured, anyone can create a public access token with a restful call at /token using the RPCPrivateKey
+    owner_credentials = []
     # (ED25519 key) This private key will be used to generate a token for authentication through RPC Port; if not configured, anyone can access the SDK rpc port without authentication
     rpc_private_key = ""
 
@@ -35,11 +37,11 @@
 
 [p2p]
   # List of seed nodes to connect to
-  seeds = ["1434879b911fe274f4b181d2c1429fc3cb3dbc11@35.225.115.224:26605"]
+  seeds = ["74d07c095193265718d96d69b1e3171e62718ff8@35.226.21.131:26605"]
   # Enables seed mode, which will make the node crawl the network looking for peers
   seed_mode = false
   # List of peers to maintain a persistent connection to
-  persistent_peers = ["551bb4cf271c5132e6ead9a2ea4521d126549564@35.239.40.224:26605"]
+  persistent_peers = ["89a3f84fc902d81b0d051b9ed7e2fc318d379570@35.238.73.87:26605"]
   # Enable UPNP port forwarding
   upnp = false
   # Set true for strict address routability rules. If true, the node will fail to start if the given P2P address isn't routable'
