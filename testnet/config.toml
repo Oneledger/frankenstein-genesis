@@ -32,16 +32,16 @@
   sdk_address = "tcp://127.0.0.1:26602"
   btc_address = "tcp://127.0.0.1:NONE"
   eth_address = "NONE"
-  olvm_address = "tcp://127.0.0.1:26615"
+  olvm_address = "tcp://127.0.0.1:26641"
   olvm_protocol = "tcp"
 
 [p2p]
   # List of seed nodes to connect to
-  seeds = ["26478c97bf929f503e6b6734307d880e3d23422b@35.226.21.131:26605"]
+  seeds = ["d97b2914d49ac7dee2592a04ef174eb8c71d0fd2@35.194.21.171:26605"]
   # Enables seed mode, which will make the node crawl the network looking for peers
   seed_mode = false
   # List of peers to maintain a persistent connection to
-  persistent_peers = ["4aa92728005a556951df8a3453993e23c2a18e92@35.238.73.87:26605"]
+  persistent_peers = []
   # Enable UPNP port forwarding
   upnp = false
   # Set true for strict address routability rules. If true, the node will fail to start if the given P2P address isn't routable'
