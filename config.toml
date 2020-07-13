@@ -22,9 +22,9 @@
     rpc_private_key = ""
   # the schedule for chain state rotation
   [node.ChainStateRotation]
-    Recent = 10
+    Recent = 100
     Every = 100
-    Cycles = 10
+    Cycles = 100
 
 [network]
   rpc_address = "tcp://127.0.0.1:26604"
@@ -38,11 +38,11 @@
 
 [p2p]
   # List of seed nodes to connect to
-  seeds = ["999669cea64008b182a3be370ea1dfcb3244d899@35.232.117.206:26605"]
+  seeds = ["7ca52f2fb376cdcb97eebe173b6e3e3cf680d38b@35.232.117.206:26605"]
   # Enables seed mode, which will make the node crawl the network looking for peers
   seed_mode = false
   # List of peers to maintain a persistent connection to
-  persistent_peers = ["89b274611b4974f99f3dec42771e29ff84de7120@35.223.34.194:26605"]
+  persistent_peers = ["54c208c590c814cd8ad9813a4c4d330dd2e39ae0@35.223.34.194:26605"]
   # Enable UPNP port forwarding
   upnp = false
   # Set true for strict address routability rules. If true, the node will fail to start if the given P2P address isn't routable'
@@ -93,9 +93,9 @@
   # Make progress as soon as we have all precommits (as if TimeoutCommit = 0)
   skip_timeout_commit = false
   # Should this node create empty blocks
-  create_empty_blocks = false
+  create_empty_blocks = true
   # Interval between empty block creation in milliseconds
-  create_empty_blocks_interval = 0
+  create_empty_blocks_interval = 15000
   # Duration values in milliseconds
   peer_gossip_sleep_duration = 100
   peer_query_maj23_sleep_duration = 2000
@@ -116,5 +116,4 @@
 
 [ethereum_chain_driver]
   # ethereum node connection url default: http://localhost:7545
-  connection = "http://localhost:7545"
-
+  connection = "https://rinkeby.infura.io/v3/de5e96cbb6284d5ea1341bf6cb7fa401"
