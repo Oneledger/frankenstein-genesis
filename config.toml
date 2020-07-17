@@ -1,5 +1,5 @@
 [node]
-  node_name = "node"
+  node_name = "fullnode-1"
   # Fast sync allows a block to catch up quickly to the chain by downloading blocks in parallel and verifying their commits
   fast_sync = true
   # Specify what backend database to use (goleveldb|cleveldb)
@@ -38,11 +38,11 @@
 
 [p2p]
   # List of seed nodes to connect to
-  seeds = ["7ca52f2fb376cdcb97eebe173b6e3e3cf680d38b@35.232.117.206:26605"]
+  seeds = ["21da5c5c71e7d03ca3e7b28f59cecf16945e8c54@35.232.117.206:26605"]
   # Enables seed mode, which will make the node crawl the network looking for peers
   seed_mode = false
   # List of peers to maintain a persistent connection to
-  persistent_peers = ["54c208c590c814cd8ad9813a4c4d330dd2e39ae0@35.223.34.194:26605"]
+  persistent_peers = ["5349142ec9af4f4174b83c44810da56b43eb824e@35.223.34.194:26605"]
   # Enable UPNP port forwarding
   upnp = false
   # Set true for strict address routability rules. If true, the node will fail to start if the given P2P address isn't routable'
@@ -89,13 +89,13 @@
   timeout_prevote_delta = 500
   timeout_precommit = 1000
   timeout_precommit_delta = 500
-  timeout_commit = 1000
+  timeout_commit = 6000
   # Make progress as soon as we have all precommits (as if TimeoutCommit = 0)
   skip_timeout_commit = false
   # Should this node create empty blocks
   create_empty_blocks = true
   # Interval between empty block creation in milliseconds
-  create_empty_blocks_interval = 15000
+  create_empty_blocks_interval = 9000
   # Duration values in milliseconds
   peer_gossip_sleep_duration = 100
   peer_query_maj23_sleep_duration = 2000
@@ -116,4 +116,4 @@
 
 [ethereum_chain_driver]
   # ethereum node connection url default: http://localhost:7545
-  connection = "https://rinkeby.infura.io/v3/de5e96cbb6284d5ea1341bf6cb7fa401"
+  connection = "https://rinkeby.infura.io/v3/
