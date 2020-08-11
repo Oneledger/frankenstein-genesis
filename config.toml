@@ -116,4 +116,4 @@
 
 [ethereum_chain_driver]
   # ethereum node connection url default: http://localhost:7545
-  connection = "https://rinkeby.infura.io/v3/
+  connection = "https://rinkeby.infura.io/v3/"
