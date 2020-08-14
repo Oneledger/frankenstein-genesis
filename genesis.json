@@ -1,370 +1,906 @@
 {
-  "genesis_time": "2020-07-14T20:41:26.184708849Z",
-  "chain_id": "OneLedger-2b58",
-  "consensus_params": {
-    "block": {
-      "max_bytes": "22020096",
-      "max_gas": "-1",
-      "time_iota_ms": "1000"
-    },
-    "evidence": {
-      "max_age_num_blocks": "100000",
-      "max_age_duration": "172800000000000"
-    },
-    "validator": {
-      "pub_key_types": [
-        "ed25519"
-      ]
-    }
-  },
-  "validators": [
-    {
-      "address": "0F41D1724C2BBAFAE10455E6DBDF1F89AB1621D2",
-      "pub_key": {
-        "type": "tendermint/PubKeyEd25519",
-        "value": "73+0r/corZyMt3+oATu4+HPd5zVK9u5SH7EBWR/n4ww="
-      },
-      "power": "1",
-      "name": "0"
-    },
-    {
-      "address": "1E0D71C854EF2FDA564F8FC03E23ED0D7B6C1A2A",
-      "pub_key": {
-        "type": "tendermint/PubKeyEd25519",
-        "value": "swZ9QVX3MqZfDaREdwKCUrakhRSIIu4Nw9Exb0/FqTs="
-      },
-      "power": "1",
-      "name": "1"
-    },
-    {
-      "address": "27AF5488EF034CAFD1072442EAE7E5A61CCB5421",
-      "pub_key": {
-        "type": "tendermint/PubKeyEd25519",
-        "value": "qVjShxfy/6yQ5gD+vVHPE2U3eotUBehVis84e/ZnW/0="
-      },
-      "power": "1",
-      "name": "2"
-    },
-    {
-      "address": "CC8AEF0465E5B4843DBD3FD4B5BC801762926B05",
-      "pub_key": {
-        "type": "tendermint/PubKeyEd25519",
-        "value": "/KFw+umcfBnzJ564d9ldBv0jjx/Yz8wcK9ob5TJPFOg="
-      },
-      "power": "1",
-      "name": "3"
-    }
-  ],
-  "app_hash": "",
-  "app_state": {
-    "currencies": [
-      {
-        "id": 0,
-        "name": "OLT",
-        "chain": 0,
-        "decimal": 18,
-        "unit": "nue"
-      },
-      {
-        "id": 1,
-        "name": "VT",
-        "chain": 0,
-        "decimal": 0,
-        "unit": "vt"
-      },
-      {
-        "id": 2,
-        "name": "BTC",
-        "chain": 1,
-        "decimal": 8,
-        "unit": "satoshi"
-      },
-      {
-        "id": 3,
-        "name": "ETH",
-        "chain": 2,
-        "decimal": 18,
-        "unit": "wei"
-      },
-      {
-        "id": 4,
-        "name": "TTC",
-        "chain": 3,
-        "decimal": 18,
-        "unit": "testUnits"
-      }
-    ],
-    "governance": {
-      "feeOption": {
-        "feeCurrency": {
-          "id": 0,
-          "name": "OLT",
-          "chain": 0,
-          "decimal": 18,
-          "unit": "nue"
-        },
-        "minFeeDecimal": 9
-      },
-      "ethchaindriverOption": {
-        "ContractABI": "[{\"inputs\":[{\"internalType\":\"address[]\",\"name\":\"initialValidators\",\"type\":\"address[]\"},{\"internalType\":\"uint256\",\"name\":\"_lock_period\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"_address\",\"type\":\"address\"}],\"name\":\"AddValidator\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"sender\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount_received\",\"type\":\"uint256\"}],\"name\":\"Lock\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"recepient\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount_requested\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"redeemFeeCharged\",\"type\":\"uint256\"}],\"name\":\"RedeemRequest\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"validator\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"NewSmartContractAddress\",\"type\":\"address\"}],\"name\":\"ValidatorMigrated\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"validator_addresss\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"gasReturned\",\"type\":\"uint256\"}],\"name\":\"ValidatorSignedRedeem\",\"type\":\"event\"},{\"constant\":false,\"inputs\":[],\"name\":\"collectUserFee\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getOLTEthAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"recipient_\",\"type\":\"address\"}],\"name\":\"getRedeemBalance\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"recipient_\",\"type\":\"address\"}],\"name\":\"getSignatureCount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getTotalEthBalance\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"recipient_\",\"type\":\"address\"}],\"name\":\"hasValidatorSigned\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"addr\",\"type\":\"address\"}],\"name\":\"isValidator\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"recepient_\",\"type\":\"address\"}],\"name\":\"isredeemAvailable\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"lock\",\"outputs\":[],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"newSmartContractAddress\",\"type\":\"address\"}],\"name\":\"migrate\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"migrationSignatures\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"migrationSigners\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"numValidators\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amount_\",\"type\":\"uint256\"}],\"name\":\"redeem\",\"outputs\":[],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amount_\",\"type\":\"uint256\"},{\"internalType\":\"addresspayable\",\"name\":\"recipient_\",\"type\":\"address\"}],\"name\":\"sign\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"validators\",\"outputs\":[{\"internalType\":\"uint8\",\"name\":\"\",\"type\":\"uint8\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"recipient_\",\"type\":\"address\"}],\"name\":\"verifyRedeem\",\"outputs\":[{\"internalType\":\"int8\",\"name\":\"\",\"type\":\"int8\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}]",
-        "ContractAddress": "0x696f377faf323ba0f77bbf3b5d646ccdda5e4ed8",
-        "TokenList": [],
-        "ERCContractABI": "",
-        "ERCContractAddress": "0x0000000000000000000000000000000000000000",
-        "TotalSupply": "1000000000000000000000",
-        "TotalSupplyAddr": "oneledgerSupplyAddress",
-        "BlockConfirmation": 12
-      },
-      "bitcoinChainDriverOption": {
-        "ChainType": "testnet3",
-        "TotalSupply": "1000000000",
-        "TotalSupplyAddr": "oneledgerSupplyAddress",
-        "BlockConfirmation": 6
-      },
-      "onsOptions": {
-        "currency": "OLT",
-        "perBlockFees": "100000000000000",
-        "baseDomainPrice": "1000000000000000000000",
-        "firstLevelDomains": [
-          "ol"
-        ]
-      },
-      "propOptions": {
-        "configUpdate": {
-          "initialFunding": "20000000000000000000000",
-          "fundingGoal": "50000000000000000000000",
-          "fundingDeadline": 15000,
-          "votingDeadline": 15000,
-          "passPercentage": 51,
-          "passedFundDistribution": {
-            "validators": 0,
-            "feePool": 60,
-            "burn": 5,
-            "executionCost": 15,
-            "bountyPool": 10,
-            "proposerReward": 10
-          },
-          "failedFundDistribution": {
-            "validators": 0,
-            "feePool": 15,
-            "burn": 25,
-            "executionCost": 0,
-            "bountyPool": 60,
-            "proposerReward": 0
-          },
-          "proposalExecutionCost": "executionCostConfig"
-        },
-        "codeChange": {
-          "initialFunding": "100000000000000000000000",
-          "fundingGoal": "500000000000000000000000",
-          "fundingDeadline": 15000,
-          "votingDeadline": 15000,
-          "passPercentage": 51,
-          "passedFundDistribution": {
-            "validators": 0,
-            "feePool": 15,
-            "burn": 0,
-            "executionCost": 75,
-            "bountyPool": 0,
-            "proposerReward": 10
-          },
-          "failedFundDistribution": {
-            "validators": 0,
-            "feePool": 15,
-            "burn": 25,
-            "executionCost": 0,
-            "bountyPool": 60,
-            "proposerReward": 0
-          },
-          "proposalExecutionCost": "executionCostCodeChange"
-        },
-        "general": {
-          "initialFunding": "10000000000000000000000",
-          "fundingGoal": "20000000000000000000000",
-          "fundingDeadline": 15000,
-          "votingDeadline": 15000,
-          "passPercentage": 51,
-          "passedFundDistribution": {
-            "validators": 0,
-            "feePool": 75,
-            "burn": 5,
-            "executionCost": 0,
-            "bountyPool": 10,
-            "proposerReward": 10
-          },
-          "failedFundDistribution": {
-            "validators": 0,
-            "feePool": 15,
-            "burn": 25,
-            "executionCost": 0,
-            "bountyPool": 60,
-            "proposerReward": 0
-          },
-          "proposalExecutionCost": "executionCostGeneral"
-        },
-        "bountyProgramAddr": "oneledgerBountyProgram"
-      },
-      "stakingOptions": {
-        "minSelfDelegationAmount": "3000000",
-        "minDelegationAmount": "1",
-        "topValidatorCount": 16,
-        "maturityTime": 5000
-      },
-      "rewardOptions": {
-        "rewardInterval": 1,
-        "rewardPoolAddress": "rewardpool",
-        "rewardCurrency": "OLT",
-        "calculateInterval": 1000,
-        "annualSupply": "50000000000000000000000000",
-        "yearsOfSupply": 5
-      }
-    },
-    "state": {
-      "Version": 0,
-      "Hash": null
-    },
-    "balances": [
-      {
-        "address": "0ltf675d27234bb8dca1ed99f15c296fd03977768eb",
-        "currency": "OLT",
-        "amount": "125000000000000000000000000"
-      },
-      {
-        "address": "0ltf675d27234bb8dca1ed99f15c296fd03977768eb",
-        "currency": "VT",
-        "amount": "100"
-      },
-      {
-        "address": "0ltb593b6cf540f083e208b8db73f24f289eaeedd92",
-        "currency": "OLT",
-        "amount": "125000000000000000000000000"
-      },
-      {
-        "address": "0ltb593b6cf540f083e208b8db73f24f289eaeedd92",
-        "currency": "VT",
-        "amount": "100"
-      },
-      {
-        "address": "0lt0b2361445590347f888a4e14632ec5194ddebceb",
-        "currency": "OLT",
-        "amount": "125000000000000000000000000"
-      },
-      {
-        "address": "0lt0b2361445590347f888a4e14632ec5194ddebceb",
-        "currency": "VT",
-        "amount": "100"
-      },
-      {
-        "address": "0lt3d2bf8d59ed5980226d8bc608f543b1b70b4dc36",
-        "currency": "OLT",
-        "amount": "125000000000000000000000000"
-      },
-      {
-        "address": "0lt3d2bf8d59ed5980226d8bc608f543b1b70b4dc36",
-        "currency": "VT",
-        "amount": "100"
-      },
-      {
-        "address": "0lt21da5c5c71e7d03ca3e7b28f59cecf16945e8c54",
-        "currency": "OLT",
-        "amount": "125000000000000000000000000"
-      },
-      {
-        "address": "0lt21da5c5c71e7d03ca3e7b28f59cecf16945e8c54",
-        "currency": "VT",
-        "amount": "1"
-      },
-      {
-        "address": "0lt5349142ec9af4f4174b83c44810da56b43eb824e",
-        "currency": "OLT",
-        "amount": "125000000000000000000000000"
-      },
-      {
-        "address": "0lt5349142ec9af4f4174b83c44810da56b43eb824e",
-        "currency": "VT",
-        "amount": "1"
-      },
-      {
-        "address": "0ltffd87188bd0054c7cb4292329f97a1dd3a388640",
-        "currency": "OLT",
-        "amount": "125000000000000000000000000"
-      },
-      {
-        "address": "0ltffd87188bd0054c7cb4292329f97a1dd3a388640",
-        "currency": "VT",
-        "amount": "1"
-      },
-      {
-        "address": "0lt207415d5d4f19f097b1a01f2cbb882ff0d212b49",
-        "currency": "OLT",
-        "amount": "125000000000000000000000000"
-      },
-      {
-        "address": "0lt207415d5d4f19f097b1a01f2cbb882ff0d212b49",
-        "currency": "VT",
-        "amount": "1"
-      }
-    ],
-    "staking": [
-      {
-        "ValidatorAddress": "0lt0f41d1724c2bbafae10455e6dbdf1f89ab1621d2",
-        "StakeAddress": "0ltf675d27234bb8dca1ed99f15c296fd03977768eb",
-        "Pubkey": {
-          "keyType": "ed25519",
-          "data": "73+0r/corZyMt3+oATu4+HPd5zVK9u5SH7EBWR/n4ww="
-        },
-        "ECDSAPubKey": {
-          "keyType": "btcecsecp",
-          "data": "AqJWjTPRcCbh4uXKVzZOKslNKs2ucy2d8srayeXDYwh+"
-        },
-        "Name": "0",
-        "Amount": "4000000"
-      },
-      {
-        "ValidatorAddress": "0lt1e0d71c854ef2fda564f8fc03e23ed0d7b6c1a2a",
-        "StakeAddress": "0ltb593b6cf540f083e208b8db73f24f289eaeedd92",
-        "Pubkey": {
-          "keyType": "ed25519",
-          "data": "swZ9QVX3MqZfDaREdwKCUrakhRSIIu4Nw9Exb0/FqTs="
-        },
-        "ECDSAPubKey": {
-          "keyType": "btcecsecp",
-          "data": "ApNcFY/EWd6IDWd6SbEKsp1Tx3ijvF7vumiqMJpPF3Ys"
-        },
-        "Name": "1",
-        "Amount": "4000000"
-      },
-      {
-        "ValidatorAddress": "0lt27af5488ef034cafd1072442eae7e5a61ccb5421",
-        "StakeAddress": "0lt0b2361445590347f888a4e14632ec5194ddebceb",
-        "Pubkey": {
-          "keyType": "ed25519",
-          "data": "qVjShxfy/6yQ5gD+vVHPE2U3eotUBehVis84e/ZnW/0="
-        },
-        "ECDSAPubKey": {
-          "keyType": "btcecsecp",
-          "data": "AgKM/nJDjXI8UtbONtZwmHTCAPTxIXLNwjb2vr+cxrrk"
-        },
-        "Name": "2",
-        "Amount": "4000000"
-      },
-      {
-        "ValidatorAddress": "0ltcc8aef0465e5b4843dbd3fd4b5bc801762926b05",
-        "StakeAddress": "0lt3d2bf8d59ed5980226d8bc608f543b1b70b4dc36",
-        "Pubkey": {
-          "keyType": "ed25519",
-          "data": "/KFw+umcfBnzJ564d9ldBv0jjx/Yz8wcK9ob5TJPFOg="
-        },
-        "ECDSAPubKey": {
-          "keyType": "btcecsecp",
-          "data": "Aol8QPU8SJSybB1wM4lX9ravzk0e8D1TSXjMLdBOMUDf"
-        },
-        "Name": "3",
-        "Amount": "4000000"
-      }
-    ],
-    "domains": [],
-    "trackers": null,
-    "fees": []
-  }
+"genesis_time":"2020-08-13T15:06:22.036399203Z",
+"chain_id":"chronos-v0.14.4",
+"consensus_params":{
+ "block": {
+  "max_bytes": "22020096",
+  "max_gas": "-1",
+  "time_iota_ms": "1000"
+ },
+ "evidence": {
+  "max_age_num_blocks": "100000",
+  "max_age_duration": "172800000000000"
+ },
+ "validator": {
+  "pub_key_types": [
+   "ed25519"
+  ]
+ }
+},
+"validators":[{
+ "address": "0f41d1724c2bbafae10455e6dbdf1f89ab1621d2",
+ "pub_key": {
+  "type": "tendermint/PubKeyEd25519",
+  "value": "73+0r/corZyMt3+oATu4+HPd5zVK9u5SH7EBWR/n4ww="
+ },
+ "power": "4000000",
+ "name": "0"
 }
+,{
+ "address": "1e0d71c854ef2fda564f8fc03e23ed0d7b6c1a2a",
+ "pub_key": {
+  "type": "tendermint/PubKeyEd25519",
+  "value": "swZ9QVX3MqZfDaREdwKCUrakhRSIIu4Nw9Exb0/FqTs="
+ },
+ "power": "4000000",
+ "name": "1"
+}
+,{
+ "address": "27af5488ef034cafd1072442eae7e5a61ccb5421",
+ "pub_key": {
+  "type": "tendermint/PubKeyEd25519",
+  "value": "qVjShxfy/6yQ5gD+vVHPE2U3eotUBehVis84e/ZnW/0="
+ },
+ "power": "4000000",
+ "name": "2"
+}
+,{
+ "address": "cc8aef0465e5b4843dbd3fd4b5bc801762926b05",
+ "pub_key": {
+  "type": "tendermint/PubKeyEd25519",
+  "value": "/KFw+umcfBnzJ564d9ldBv0jjx/Yz8wcK9ob5TJPFOg="
+ },
+ "power": "4000000",
+ "name": "3"
+}
+],
+"app_hash":"",
+"app_state":{"currencies":[
+ {
+  "id": 0,
+  "name": "OLT",
+  "chain": 0,
+  "decimal": 18,
+  "unit": "nue"
+ },
+ {
+  "id": 1,
+  "name": "VT",
+  "chain": 0,
+  "decimal": 0,
+  "unit": "vt"
+ },
+ {
+  "id": 2,
+  "name": "BTC",
+  "chain": 1,
+  "decimal": 8,
+  "unit": "satoshi"
+ },
+ {
+  "id": 3,
+  "name": "ETH",
+  "chain": 2,
+  "decimal": 18,
+  "unit": "wei"
+ },
+ {
+  "id": 4,
+  "name": "TTC",
+  "chain": 3,
+  "decimal": 18,
+  "unit": "testUnits"
+ }
+],
+"governance":{
+ "feeOption": {
+  "feeCurrency": {
+   "id": 0,
+   "name": "OLT",
+   "chain": 0,
+   "decimal": 18,
+   "unit": "nue"
+  },
+  "minFeeDecimal": 9
+ },
+ "ethchaindriverOption": {
+  "ContractABI": "[{\"inputs\":[{\"internalType\":\"address[]\",\"name\":\"initialValidators\",\"type\":\"address[]\"},{\"internalType\":\"uint256\",\"name\":\"_lock_period\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"_address\",\"type\":\"address\"}],\"name\":\"AddValidator\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"sender\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount_received\",\"type\":\"uint256\"}],\"name\":\"Lock\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"recepient\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount_requested\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"redeemFeeCharged\",\"type\":\"uint256\"}],\"name\":\"RedeemRequest\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"validator\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"NewSmartContractAddress\",\"type\":\"address\"}],\"name\":\"ValidatorMigrated\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"validator_addresss\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"gasReturned\",\"type\":\"uint256\"}],\"name\":\"ValidatorSignedRedeem\",\"type\":\"event\"},{\"constant\":false,\"inputs\":[],\"name\":\"collectUserFee\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getOLTEthAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"recipient_\",\"type\":\"address\"}],\"name\":\"getRedeemBalance\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"recipient_\",\"type\":\"address\"}],\"name\":\"getSignatureCount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getTotalEthBalance\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"recipient_\",\"type\":\"address\"}],\"name\":\"hasValidatorSigned\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"addr\",\"type\":\"address\"}],\"name\":\"isValidator\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"recepient_\",\"type\":\"address\"}],\"name\":\"isredeemAvailable\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"lock\",\"outputs\":[],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"newSmartContractAddress\",\"type\":\"address\"}],\"name\":\"migrate\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"migrationSignatures\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"migrationSigners\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"numValidators\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amount_\",\"type\":\"uint256\"}],\"name\":\"redeem\",\"outputs\":[],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amount_\",\"type\":\"uint256\"},{\"internalType\":\"addresspayable\",\"name\":\"recipient_\",\"type\":\"address\"}],\"name\":\"sign\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"validators\",\"outputs\":[{\"internalType\":\"uint8\",\"name\":\"\",\"type\":\"uint8\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"recipient_\",\"type\":\"address\"}],\"name\":\"verifyRedeem\",\"outputs\":[{\"internalType\":\"int8\",\"name\":\"\",\"type\":\"int8\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}]",
+  "ContractAddress": "0x696f377faf323ba0f77bbf3b5d646ccdda5e4ed8",
+  "TokenList": [],
+  "ERCContractABI": "",
+  "ERCContractAddress": "0x0000000000000000000000000000000000000000",
+  "TotalSupply": "1000000000000000000000",
+  "TotalSupplyAddr": "oneledgerSupplyAddress",
+  "BlockConfirmation": 12
+ },
+ "bitcoinChainDriverOption": {
+  "ChainType": "testnet3",
+  "TotalSupply": "1000000000",
+  "TotalSupplyAddr": "oneledgerSupplyAddress",
+  "BlockConfirmation": 6
+ },
+ "onsOptions": {
+  "currency": "OLT",
+  "perBlockFees": "100000000000000",
+  "baseDomainPrice": "1000000000000000000000",
+  "firstLevelDomains": [
+   "ol"
+  ]
+ },
+ "propOptions": {
+  "configUpdate": {
+   "initialFunding": "20000000000000000000000",
+   "fundingGoal": "50000000000000000000000",
+   "fundingDeadline": 15000,
+   "votingDeadline": 15000,
+   "passPercentage": 51,
+   "passedFundDistribution": {
+    "validators": 0,
+    "feePool": 60,
+    "burn": 5,
+    "executionCost": 15,
+    "bountyPool": 10,
+    "proposerReward": 10
+   },
+   "failedFundDistribution": {
+    "validators": 0,
+    "feePool": 15,
+    "burn": 25,
+    "executionCost": 0,
+    "bountyPool": 60,
+    "proposerReward": 0
+   },
+   "proposalExecutionCost": "executionCostConfig"
+  },
+  "codeChange": {
+   "initialFunding": "100000000000000000000000",
+   "fundingGoal": "500000000000000000000000",
+   "fundingDeadline": 15000,
+   "votingDeadline": 15000,
+   "passPercentage": 51,
+   "passedFundDistribution": {
+    "validators": 0,
+    "feePool": 15,
+    "burn": 0,
+    "executionCost": 75,
+    "bountyPool": 0,
+    "proposerReward": 10
+   },
+   "failedFundDistribution": {
+    "validators": 0,
+    "feePool": 15,
+    "burn": 25,
+    "executionCost": 0,
+    "bountyPool": 60,
+    "proposerReward": 0
+   },
+   "proposalExecutionCost": "executionCostCodeChange"
+  },
+  "general": {
+   "initialFunding": "10000000000000000000000",
+   "fundingGoal": "20000000000000000000000",
+   "fundingDeadline": 15000,
+   "votingDeadline": 15000,
+   "passPercentage": 51,
+   "passedFundDistribution": {
+    "validators": 0,
+    "feePool": 75,
+    "burn": 5,
+    "executionCost": 0,
+    "bountyPool": 10,
+    "proposerReward": 10
+   },
+   "failedFundDistribution": {
+    "validators": 0,
+    "feePool": 15,
+    "burn": 25,
+    "executionCost": 0,
+    "bountyPool": 60,
+    "proposerReward": 0
+   },
+   "proposalExecutionCost": "executionCostGeneral"
+  },
+  "bountyProgramAddr": "oneledgerBountyProgram"
+ },
+ "stakingOptions": {
+  "minSelfDelegationAmount": "3000000",
+  "minDelegationAmount": "1",
+  "topValidatorCount": 16,
+  "maturityTime": 5000
+ },
+ "rewardOptions": {
+  "rewardInterval": 1,
+    "rewardPoolAddress": "rewardpool",
+    "rewardCurrency": "OLT",
+    "estimatedSecondsPerCycle": 1728,
+    "blockSpeedCalculateCycle": 100,
+    "yearCloseWindow": 86400,
+    "yearBlockRewardShares": [
+        "9600000000000000000000000",
+        "19200000000000000000000000",
+        "38400000000000000000000000",
+        "38400000000000000000000000",
+        "38400000000000000000000000",
+	"38400000000000000000000000"
+    ],
+    "burnoutRate": "5000000000000000000"
+}
+},
+"state":{
+ "Version": 0,
+ "Hash": null
+},
+"balances":[{
+ "address": "0lt09bee34788bea2e7a1270a4c8d5de99c242dd49d",
+ "currency": "OLT",
+ "amount": "10000999983760000000000"
+}
+,{
+ "address": "0lt0a1d4902ee1bdda531caf43ea932d9c1a97a2b7c",
+ "currency": "OLT",
+ "amount": "26021496173880000000000"
+}
+,{
+ "address": "0lt0b2361445590347f888a4e14632ec5194ddebceb",
+ "currency": "OLT",
+ "amount": "125000000000000000000000000"
+}
+,{
+ "address": "0lt0b2361445590347f888a4e14632ec5194ddebceb",
+ "currency": "VT",
+ "amount": "100"
+}
+,{
+ "address": "0lt17a37c537caf25e47f89843c096edf5fb8ef37d8",
+ "currency": "ETH",
+ "amount": "1000000000000000000"
+}
+,{
+ "address": "0lt17a37c537caf25e47f89843c096edf5fb8ef37d8",
+ "currency": "OLT",
+ "amount": "21199999721600000000000"
+}
+,{
+ "address": "0lt1b9a04c3d047ec2913f2a51cd4ae08f23d88cf5c",
+ "currency": "OLT",
+ "amount": "20000999983760000000000"
+}
+,{
+ "address": "0lt207415d5d4f19f097b1a01f2cbb882ff0d212b49",
+ "currency": "OLT",
+ "amount": "125000000000000000000000000"
+}
+,{
+ "address": "0lt207415d5d4f19f097b1a01f2cbb882ff0d212b49",
+ "currency": "VT",
+ "amount": "1"
+}
+,{
+ "address": "0lt21da5c5c71e7d03ca3e7b28f59cecf16945e8c54",
+ "currency": "OLT",
+ "amount": "125000000000000000000000000"
+}
+,{
+ "address": "0lt21da5c5c71e7d03ca3e7b28f59cecf16945e8c54",
+ "currency": "VT",
+ "amount": "1"
+}
+,{
+ "address": "0lt22f602ab05de389cb8243c46ad28e46b1d20c4a5",
+ "currency": "OLT",
+ "amount": "999983760000000000"
+}
+,{
+ "address": "0lt2627e1ab2e795ca1e6684c788f801f4080b71970",
+ "currency": "OLT",
+ "amount": "10000999983760000000000"
+}
+,{
+ "address": "0lt311f24d2a112740516fe1cc1b8a0258b4ed434a4",
+ "currency": "OLT",
+ "amount": "1439099999967440000000000"
+}
+,{
+ "address": "0lt331a1bfcea1b6e46efa7f44ab84a31988783f036",
+ "currency": "OLT",
+ "amount": "10000999983760000000000"
+}
+,{
+ "address": "0lt3d2bf8d59ed5980226d8bc608f543b1b70b4dc36",
+ "currency": "OLT",
+ "amount": "125000000000000000000000000"
+}
+,{
+ "address": "0lt3d2bf8d59ed5980226d8bc608f543b1b70b4dc36",
+ "currency": "VT",
+ "amount": "100"
+}
+,{
+ "address": "0lt40f4765758fdc10a5dd9b2803029e4f606c93f98",
+ "currency": "OLT",
+ "amount": "5000000000000000000000"
+}
+,{
+ "address": "0lt431738bd6858b603b711c02aef3b4aee0fb0389b",
+ "currency": "OLT",
+ "amount": "40000000000000000000000"
+}
+,{
+ "address": "0lt4b3a3fe6b842f09cf4d42fe55ec1864a4c899999",
+ "currency": "OLT",
+ "amount": "749992999968740000000000"
+}
+,{
+ "address": "0lt4f9b94c32d3ec3f336b7f00e6f351c24c8c4f1a7",
+ "currency": "OLT",
+ "amount": "3499999999786000000000000"
+}
+,{
+ "address": "0lt518529c478222767c5394eb3d541d42e91ed5f22",
+ "currency": "OLT",
+ "amount": "999983680000000000"
+}
+,{
+ "address": "0lt52901e9603f9d504049c9d79132e3e9c2820b6a4",
+ "currency": "ETH",
+ "amount": "3000000000000000"
+}
+,{
+ "address": "0lt52901e9603f9d504049c9d79132e3e9c2820b6a4",
+ "currency": "OLT",
+ "amount": "401999998905980000000000"
+}
+,{
+ "address": "0lt5349142ec9af4f4174b83c44810da56b43eb824e",
+ "currency": "OLT",
+ "amount": "125000000000000000000000000"
+}
+,{
+ "address": "0lt5349142ec9af4f4174b83c44810da56b43eb824e",
+ "currency": "VT",
+ "amount": "1"
+}
+,{
+ "address": "0lt55de0799bfecf679a38b981abc37327dd80b77d9",
+ "currency": "OLT",
+ "amount": "3070000000000000000000000"
+}
+,{
+ "address": "0lt5651f10f83499c056fcd07c8064e40f64a71205b",
+ "currency": "OLT",
+ "amount": "999999943460000000000"
+}
+,{
+ "address": "0lt5953a3846ff51f2c4969b332fa5c0f7c0feaf1fe",
+ "currency": "OLT",
+ "amount": "510123000000000000000000"
+}
+,{
+ "address": "0lt5a67c98b35ecd92a9f2a15d1c8238c67c6795a0a",
+ "currency": "OLT",
+ "amount": "14999999983760000000000"
+}
+,{
+ "address": "0lt5da025b3957da555b2f6f11363d0f0a666f2c6fe",
+ "currency": "OLT",
+ "amount": "500000000000000000000000"
+}
+,{
+ "address": "0lt6532de024da889ea34d3eb8d2842dd9f3c58c2a7",
+ "currency": "OLT",
+ "amount": "1479945999917040000000000"
+}
+,{
+ "address": "0lt6820cf681f1ebce746cac77a8bf5c723315b0c6a",
+ "currency": "OLT",
+ "amount": "80000000000000000000000"
+}
+,{
+ "address": "0lt6b5f271cf1c579eeadee647cae8aab833a3d6165",
+ "currency": "OLT",
+ "amount": "10000999983760000000000"
+}
+,{
+ "address": "0lt6f6e656c6564676572537570706c794164647265",
+ "currency": "ETH",
+ "amount": "1503000000000000000"
+}
+,{
+ "address": "0lt76564d05a796e69cb44df686d93d4f97d0c33199",
+ "currency": "OLT",
+ "amount": "999983680000000000"
+}
+,{
+ "address": "0lt7bbb34fe30b8a050f4f277119ae78816c2f13f03",
+ "currency": "OLT",
+ "amount": "10000000000000000000000"
+}
+,{
+ "address": "0lt8b7328a867a4dfdd2c3a1222969d320458a804b5",
+ "currency": "OLT",
+ "amount": "20000000000000000000000"
+}
+,{
+ "address": "0lt981970e509977f8882fb42cba35b4a74d65efb1b",
+ "currency": "OLT",
+ "amount": "999983760000000000"
+}
+,{
+ "address": "0lt9b63402af1daf21184441f2da71a31f7e85159a9",
+ "currency": "OLT",
+ "amount": "20000999983760000000000"
+}
+,{
+ "address": "0lt9f4eebbaa476ce8ee6539ca0ef5d334106610916",
+ "currency": "OLT",
+ "amount": "10500099999723440000000000"
+}
+,{
+ "address": "0ltad3f0304c8d0c1d3428e6b04d19e07461657bc31",
+ "currency": "OLT",
+ "amount": "10000999983760000000000"
+}
+,{
+ "address": "0ltad843bc17b217f7b1e24eb7fd9519a60289eb0e4",
+ "currency": "OLT",
+ "amount": "10000999983760000000000"
+}
+,{
+ "address": "0ltb593b6cf540f083e208b8db73f24f289eaeedd92",
+ "currency": "OLT",
+ "amount": "125000000000000000000000000"
+}
+,{
+ "address": "0ltb593b6cf540f083e208b8db73f24f289eaeedd92",
+ "currency": "VT",
+ "amount": "100"
+}
+,{
+ "address": "0ltb74ac2937c837e6076adcec4b5f16b6039efec31",
+ "currency": "OLT",
+ "amount": "1999967440000000000"
+}
+,{
+ "address": "0ltbd894892a893fcb28e944768d6f494a727fa651e",
+ "currency": "OLT",
+ "amount": "999983760000000000"
+}
+,{
+ "address": "0ltc39df2c54e8c23b00ab5c3029c31e3e06f159626",
+ "currency": "OLT",
+ "amount": "10000000000000000000000"
+}
+,{
+ "address": "0ltc72a57abea3fa67fdaf638ea5756136a89ffb6e7",
+ "currency": "OLT",
+ "amount": "10000000000000000000000"
+}
+,{
+ "address": "0ltcfb12398c11ecf47ed6bdb9cee21e0386c36dae2",
+ "currency": "OLT",
+ "amount": "3208999999982920000000000"
+}
+,{
+ "address": "0ltd2af9122ed23c066bf39e86cc951ab694fbce21e",
+ "currency": "OLT",
+ "amount": "9899999983840000000000"
+}
+,{
+ "address": "0ltdad65b14c9a92603ede2aa960844159230cf6556",
+ "currency": "OLT",
+ "amount": "3480490999459020000000000"
+}
+,{
+ "address": "0lte749dfdd0ce7b290c75f4ea57fddd1cd2f6dd86d",
+ "currency": "OLT",
+ "amount": "917855503636280000000000"
+}
+,{
+ "address": "0ltebbe8f98e245167e77df855fdf6a89631838acb4",
+ "currency": "OLT",
+ "amount": "309989999968740000000000"
+}
+,{
+ "address": "0ltebfcd6b236f95e45bd17ad310731e9fcb7ec26c1",
+ "currency": "OLT",
+ "amount": "20000999983760000000000"
+}
+,{
+ "address": "0ltee73a458c1761d33245fa6fca9f8b066e5c4aaf8",
+ "currency": "OLT",
+ "amount": "999983760000000000"
+}
+,{
+ "address": "0ltf2222f5eecc2aee04dc2a197a7ea704e97b4f2aa",
+ "currency": "ETH",
+ "amount": "500000000000000000"
+}
+,{
+ "address": "0ltf2222f5eecc2aee04dc2a197a7ea704e97b4f2aa",
+ "currency": "OLT",
+ "amount": "16799999445680000000000"
+}
+,{
+ "address": "0ltf3f75dcc9f1881ba16e0e7eb8865db23c9dd3c84",
+ "currency": "OLT",
+ "amount": "505008999679460000000000"
+}
+,{
+ "address": "0ltf675d27234bb8dca1ed99f15c296fd03977768eb",
+ "currency": "OLT",
+ "amount": "125000000000000000000000000"
+}
+,{
+ "address": "0ltf675d27234bb8dca1ed99f15c296fd03977768eb",
+ "currency": "VT",
+ "amount": "100"
+}
+,{
+ "address": "0ltffd87188bd0054c7cb4292329f97a1dd3a388640",
+ "currency": "OLT",
+ "amount": "84367899979917702000000000"
+}
+,{
+ "address": "0ltffd87188bd0054c7cb4292329f97a1dd3a388640",
+ "currency": "VT",
+ "amount": "1"
+}
+],
+"staking":[{
+ "ValidatorAddress": "0lt0f41d1724c2bbafae10455e6dbdf1f89ab1621d2",
+ "StakeAddress": "0ltf675d27234bb8dca1ed99f15c296fd03977768eb",
+ "Pubkey": {
+  "keyType": "ed25519",
+  "data": "73+0r/corZyMt3+oATu4+HPd5zVK9u5SH7EBWR/n4ww="
+ },
+ "ECDSAPubKey": {
+  "keyType": "btcecsecp",
+  "data": "AqJWjTPRcCbh4uXKVzZOKslNKs2ucy2d8srayeXDYwh+"
+ },
+ "Name": "0",
+ "Amount": "4000000"
+}
+,{
+ "ValidatorAddress": "0lt1e0d71c854ef2fda564f8fc03e23ed0d7b6c1a2a",
+ "StakeAddress": "0ltb593b6cf540f083e208b8db73f24f289eaeedd92",
+ "Pubkey": {
+  "keyType": "ed25519",
+  "data": "swZ9QVX3MqZfDaREdwKCUrakhRSIIu4Nw9Exb0/FqTs="
+ },
+ "ECDSAPubKey": {
+  "keyType": "btcecsecp",
+  "data": "ApNcFY/EWd6IDWd6SbEKsp1Tx3ijvF7vumiqMJpPF3Ys"
+ },
+ "Name": "1",
+ "Amount": "4000000"
+}
+,{
+ "ValidatorAddress": "0lt27af5488ef034cafd1072442eae7e5a61ccb5421",
+ "StakeAddress": "0lt0b2361445590347f888a4e14632ec5194ddebceb",
+ "Pubkey": {
+  "keyType": "ed25519",
+  "data": "qVjShxfy/6yQ5gD+vVHPE2U3eotUBehVis84e/ZnW/0="
+ },
+ "ECDSAPubKey": {
+  "keyType": "btcecsecp",
+  "data": "AgKM/nJDjXI8UtbONtZwmHTCAPTxIXLNwjb2vr+cxrrk"
+ },
+ "Name": "2",
+ "Amount": "4000000"
+}
+,{
+ "ValidatorAddress": "0ltcc8aef0465e5b4843dbd3fd4b5bc801762926b05",
+ "StakeAddress": "0lt3d2bf8d59ed5980226d8bc608f543b1b70b4dc36",
+ "Pubkey": {
+  "keyType": "ed25519",
+  "data": "/KFw+umcfBnzJ564d9ldBv0jjx/Yz8wcK9ob5TJPFOg="
+ },
+ "ECDSAPubKey": {
+  "keyType": "btcecsecp",
+  "data": "Aol8QPU8SJSybB1wM4lX9ravzk0e8D1TSXjMLdBOMUDf"
+ },
+ "Name": "3",
+ "Amount": "4000000"
+}
+],
+"domains":[{
+ "ownerAddress": "0lte749dfdd0ce7b290c75f4ea57fddd1cd2f6dd86d",
+ "beneficiary": "0lte749dfdd0ce7b290c75f4ea57fddd1cd2f6dd86d",
+ "name": "test7.ol",
+ "creationHeight": 0,
+ "lastUpdateHeight": 0,
+ "expireHeight": 9930159,
+ "activeFlag": true,
+ "onSaleFlag": false,
+ "uri": "",
+ "salePrice": null
+}
+,{
+ "ownerAddress": "0lt17a37c537caf25e47f89843c096edf5fb8ef37d8",
+ "beneficiary": "0lt17a37c537caf25e47f89843c096edf5fb8ef37d8",
+ "name": "abc.ol",
+ "creationHeight": 0,
+ "lastUpdateHeight": 0,
+ "expireHeight": 9834978,
+ "activeFlag": true,
+ "onSaleFlag": false,
+ "uri": "",
+ "salePrice": null
+}
+,{
+ "ownerAddress": "0ltcfb12398c11ecf47ed6bdb9cee21e0386c36dae2",
+ "beneficiary": "0ltcfb12398c11ecf47ed6bdb9cee21e0386c36dae2",
+ "name": "onlyone.ol",
+ "creationHeight": 0,
+ "lastUpdateHeight": 0,
+ "expireHeight": 99969438,
+ "activeFlag": true,
+ "onSaleFlag": false,
+ "uri": "",
+ "salePrice": null
+}
+,{
+ "ownerAddress": "0ltdad65b14c9a92603ede2aa960844159230cf6556",
+ "beneficiary": "0ltdad65b14c9a92603ede2aa960844159230cf6556",
+ "name": "hi.ol",
+ "creationHeight": 0,
+ "lastUpdateHeight": 0,
+ "expireHeight": 9965818,
+ "activeFlag": true,
+ "onSaleFlag": false,
+ "uri": "",
+ "salePrice": null
+}
+,{
+ "ownerAddress": "0lt0a1d4902ee1bdda531caf43ea932d9c1a97a2b7c",
+ "beneficiary": "0lt0a1d4902ee1bdda531caf43ea932d9c1a97a2b7c",
+ "name": "projectgiveback.ol",
+ "creationHeight": 0,
+ "lastUpdateHeight": 0,
+ "expireHeight": 9839792,
+ "activeFlag": true,
+ "onSaleFlag": false,
+ "uri": "",
+ "salePrice": null
+}
+,{
+ "ownerAddress": "0lt0a1d4902ee1bdda531caf43ea932d9c1a97a2b7c",
+ "beneficiary": "0lt0a1d4902ee1bdda531caf43ea932d9c1a97a2b7c",
+ "name": "pathwaystoeducation.ol",
+ "creationHeight": 0,
+ "lastUpdateHeight": 0,
+ "expireHeight": 9839788,
+ "activeFlag": true,
+ "onSaleFlag": false,
+ "uri": "",
+ "salePrice": null
+}
+,{
+ "ownerAddress": "0ltdad65b14c9a92603ede2aa960844159230cf6556",
+ "beneficiary": "0ltdad65b14c9a92603ede2aa960844159230cf6556",
+ "name": "test.ol",
+ "creationHeight": 0,
+ "lastUpdateHeight": 0,
+ "expireHeight": 9879726,
+ "activeFlag": true,
+ "onSaleFlag": false,
+ "uri": "",
+ "salePrice": null
+}
+,{
+ "ownerAddress": "0ltdad65b14c9a92603ede2aa960844159230cf6556",
+ "beneficiary": "0ltdad65b14c9a92603ede2aa960844159230cf6556",
+ "name": "aly.ol",
+ "creationHeight": 0,
+ "lastUpdateHeight": 0,
+ "expireHeight": 9874168,
+ "activeFlag": true,
+ "onSaleFlag": false,
+ "uri": "https://www.oneledger.io",
+ "salePrice": null
+}
+,{
+ "ownerAddress": "0ltdad65b14c9a92603ede2aa960844159230cf6556",
+ "beneficiary": "0ltdad65b14c9a92603ede2aa960844159230cf6556",
+ "name": "eth.aly.ol",
+ "creationHeight": 0,
+ "lastUpdateHeight": 0,
+ "expireHeight": 9874168,
+ "activeFlag": true,
+ "onSaleFlag": false,
+ "uri": "",
+ "salePrice": null
+}
+,{
+ "ownerAddress": "0ltdad65b14c9a92603ede2aa960844159230cf6556",
+ "beneficiary": "0ltdad65b14c9a92603ede2aa960844159230cf6556",
+ "name": "kucoin.aly.ol",
+ "creationHeight": 0,
+ "lastUpdateHeight": 0,
+ "expireHeight": 9874168,
+ "activeFlag": true,
+ "onSaleFlag": false,
+ "uri": "",
+ "salePrice": null
+}
+,{
+ "ownerAddress": "0ltdad65b14c9a92603ede2aa960844159230cf6556",
+ "beneficiary": "0ltdad65b14c9a92603ede2aa960844159230cf6556",
+ "name": "bitmax.aly.ol",
+ "creationHeight": 0,
+ "lastUpdateHeight": 0,
+ "expireHeight": 9874168,
+ "activeFlag": true,
+ "onSaleFlag": false,
+ "uri": "",
+ "salePrice": null
+}
+,{
+ "ownerAddress": "0ltdad65b14c9a92603ede2aa960844159230cf6556",
+ "beneficiary": "0ltdad65b14c9a92603ede2aa960844159230cf6556",
+ "name": "coinex.aly.ol",
+ "creationHeight": 0,
+ "lastUpdateHeight": 0,
+ "expireHeight": 9874168,
+ "activeFlag": true,
+ "onSaleFlag": false,
+ "uri": "",
+ "salePrice": null
+}
+],
+"trackers":[{
+ "type": 1,
+ "state": 6,
+ "trackerName": "0x3e4237b1e0dd8cf474af845ff8bbff43716f0458fa3421fa7ec819604cea0ee4",
+ "signedEthTx": null,
+ "witnesses": null,
+ "processOwner": "0lt",
+ "finalityVotes": null,
+ "to": null
+}
+,{
+ "type": 1,
+ "state": 6,
+ "trackerName": "0x64ce00ef3bd867cf35284dbfcd38c94c5b57446f3d40dbe9fbb8ff4124c11fb2",
+ "signedEthTx": null,
+ "witnesses": null,
+ "processOwner": "0lt",
+ "finalityVotes": null,
+ "to": null
+}
+,{
+ "type": 2,
+ "state": 5,
+ "trackerName": "0x04fee11dfa1ee0556fe894a67c997803d11dbdf2c6dc25a1621a421ad1504671",
+ "signedEthTx": null,
+ "witnesses": null,
+ "processOwner": "0lt",
+ "finalityVotes": null,
+ "to": null
+}
+,{
+ "type": 1,
+ "state": 5,
+ "trackerName": "0x1c6e2c5b10f0c7319e5bfa8f44d8fcb10d8a508e17bed0507c3cacfc30aa91fe",
+ "signedEthTx": null,
+ "witnesses": null,
+ "processOwner": "0lt",
+ "finalityVotes": null,
+ "to": null
+}
+,{
+ "type": 1,
+ "state": 5,
+ "trackerName": "0x1cc8a0fda4660ece116c4a6085c58d5933a97536839e84462b9db284a8dbc831",
+ "signedEthTx": null,
+ "witnesses": null,
+ "processOwner": "0lt",
+ "finalityVotes": null,
+ "to": null
+}
+,{
+ "type": 1,
+ "state": 5,
+ "trackerName": "0x25747c13a67e538babf28cac58de4ade8bc80b5dd1a094229d4408e242501aeb",
+ "signedEthTx": null,
+ "witnesses": null,
+ "processOwner": "0lt",
+ "finalityVotes": null,
+ "to": null
+}
+,{
+ "type": 1,
+ "state": 5,
+ "trackerName": "0x49a6dcdfade2d46e557f3dc07047be63bb15b6e23adbe8a3f4cd10b6439fe9dd",
+ "signedEthTx": null,
+ "witnesses": null,
+ "processOwner": "0lt",
+ "finalityVotes": null,
+ "to": null
+}
+,{
+ "type": 2,
+ "state": 5,
+ "trackerName": "0x7ef572f7e59cf055c37bb1bf4bcad02ecf86b13ecc81254b0d9b84523493f76e",
+ "signedEthTx": null,
+ "witnesses": null,
+ "processOwner": "0lt",
+ "finalityVotes": null,
+ "to": null
+}
+],
+"fees":[{
+ "address": "0lt0b2361445590347f888a4e14632ec5194ddebceb",
+ "currency": "OLT",
+ "amount": "7455560770174760191498"
+}
+,{
+ "address": "0lt3030303030303030303030303030303030303030",
+ "currency": "OLT",
+ "amount": "3"
+}
+,{
+ "address": "0lt3d2bf8d59ed5980226d8bc608f543b1b70b4dc36",
+ "currency": "OLT",
+ "amount": "7455560770174760191498"
+}
+,{
+ "address": "0lt4b3a3fe6b842f09cf4d42fe55ec1864a4c899999",
+ "currency": "OLT",
+ "amount": "1466668641763330679558"
+}
+,{
+ "address": "0lt4f9b94c32d3ec3f336b7f00e6f351c24c8c4f1a7",
+ "currency": "OLT",
+ "amount": "13600935672514"
+}
+,{
+ "address": "0lt5651f10f83499c056fcd07c8064e40f64a71205b",
+ "currency": "OLT",
+ "amount": "5625546218487"
+}
+,{
+ "address": "0lt9f4eebbaa476ce8ee6539ca0ef5d334106610916",
+ "currency": "OLT",
+ "amount": "150277120519681"
+}
+,{
+ "address": "0ltb593b6cf540f083e208b8db73f24f289eaeedd92",
+ "currency": "OLT",
+ "amount": "7455560770174760191498"
+}
+,{
+ "address": "0ltebbe8f98e245167e77df855fdf6a89631838acb4",
+ "currency": "OLT",
+ "amount": "1711112219372026143765"
+}
+,{
+ "address": "0ltf675d27234bb8dca1ed99f15c296fd03977768eb",
+ "currency": "OLT",
+ "amount": "7455560770174760191498"
+}
+],
+"delegation": {
+      "validatorAmounts": null,
+      "validatorDelegationAmounts": null,
+      "delegatorEffectiveAmounts": null,
+      "delegatorBoundedAmounts": null,
+      "matureAmounts": null
+    },
+"rewards": {
+      "rewardState": {
+        "rewards": [],
+        "intervals": [],
+        "addrList": []
+      },
+      "cumuState": {
+        "totalDistributed": "0",
+        "yearsDistributed": {
+          "Years": []
+        },
+        "maturedBalances": [],
+        "withdrawnAmounts": []
+      }
+    }
+}}
+
