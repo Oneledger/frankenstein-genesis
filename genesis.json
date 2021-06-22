@@ -1,6 +1,6 @@
 {
 "genesis_time":"2020-12-09T18:29:34.606983869Z",
-"chain_id":"chronos-0.17.2",
+"chain_id":"chronos-v-0.17.2",
 "consensus_params":{
  "block": {
   "max_bytes": "22020096",
