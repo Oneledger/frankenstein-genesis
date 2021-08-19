@@ -1,0 +1,430 @@
+{
+  "genesis_time": "2021-08-17T15:34:02.925866684Z",
+  "chain_id": "chronos-v0.18.4",
+  "consensus_params": {
+    "block": {
+      "max_bytes": "22020096",
+      "max_gas": "-1",
+      "time_iota_ms": "1000"
+    },
+    "evidence": {
+      "max_age_num_blocks": "100000",
+      "max_age_duration": "172800000000000"
+    },
+    "validator": {
+      "pub_key_types": [
+        "ed25519"
+      ]
+    }
+  },
+  "validators": [
+    {
+      "address": "970DC04D0E67CAEE4D09A21ED3EF723F2C63E216",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "d7BuL274Mm5q8UwLAlXwjybUMkQTSCHyhqXbf7IwGmU="
+      },
+      "power": "3000000",
+      "name": "0"
+    },
+    {
+      "address": "E448536F32C54D12F4CA350729FF120C399AAF6F",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "fJE3dutMHkGiQoMiHsX54HHdGCh9Wb8KMw1rAuvtHJo="
+      },
+      "power": "6000000",
+      "name": "1"
+    },
+    {
+      "address": "C6B8DE9FD5E3C6C8B0E719D4C5FA513AEB11FBEF",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "OfRxdmZEo5Uw+GLdyuuSHLvHxvFzYLDIUKdYrLSvyDA="
+      },
+      "power": "9000000",
+      "name": "2"
+    },
+    {
+      "address": "D70173B9DBCC042450685117E1F82134F229D1C5",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "auag/8NVKK9aXTfinaAVkZ8odzRQFnjpUl+ucYfZP/s="
+      },
+      "power": "12000000",
+      "name": "3"
+    }
+  ],
+  "app_hash": "",
+  "app_state": {
+    "currencies": [
+      {
+        "id": 0,
+        "name": "OLT",
+        "chain": 0,
+        "decimal": 18,
+        "unit": "nue"
+      },
+      {
+        "id": 1,
+        "name": "VT",
+        "chain": 0,
+        "decimal": 0,
+        "unit": "vt"
+      },
+      {
+        "id": 2,
+        "name": "BTC",
+        "chain": 1,
+        "decimal": 8,
+        "unit": "satoshi"
+      },
+      {
+        "id": 3,
+        "name": "ETH",
+        "chain": 2,
+        "decimal": 18,
+        "unit": "wei"
+      },
+      {
+        "id": 4,
+        "name": "TTC",
+        "chain": 3,
+        "decimal": 18,
+        "unit": "testUnits"
+      }
+    ],
+    "governance": {
+      "feeOption": {
+        "feeCurrency": {
+          "id": 0,
+          "name": "OLT",
+          "chain": 0,
+          "decimal": 18,
+          "unit": "nue"
+        },
+        "minFeeDecimal": 9
+      },
+      "ethchaindriverOption": {
+        "ContractABI": "",
+        "ContractAddress": "0x0000000000000000000000000000000000000000",
+        "TokenList": null,
+        "ERCContractABI": "",
+        "ERCContractAddress": "0x0000000000000000000000000000000000000000",
+        "TotalSupply": "",
+        "TotalSupplyAddr": "",
+        "BlockConfirmation": 0
+      },
+      "bitcoinChainDriverOption": {
+        "ChainType": "testnet3",
+        "TotalSupply": "1000000000",
+        "TotalSupplyAddr": "oneledgerSupplyAddress",
+        "BlockConfirmation": 6
+      },
+      "onsOptions": {
+        "currency": "OLT",
+        "perBlockFees": "100000000000000",
+        "baseDomainPrice": "1000000000000000000000",
+        "firstLevelDomains": [
+          "ol"
+        ]
+      },
+      "propOptions": {
+        "configUpdate": {
+          "initialFunding": "1000000000",
+          "fundingGoal": "10000000000",
+          "fundingDeadline": 75001,
+          "votingDeadline": 150000,
+          "passPercentage": 51,
+          "passedFundDistribution": {
+            "validators": 18,
+            "feePool": 18,
+            "burn": 18,
+            "executionCost": 18,
+            "bountyPool": 10,
+            "proposerReward": 18
+          },
+          "failedFundDistribution": {
+            "validators": 10,
+            "feePool": 10,
+            "burn": 10,
+            "executionCost": 20,
+            "bountyPool": 50,
+            "proposerReward": 0
+          },
+          "proposalExecutionCost": "executionCostConfig"
+        },
+        "codeChange": {
+          "initialFunding": "1000000000",
+          "fundingGoal": "10000000000",
+          "fundingDeadline": 75001,
+          "votingDeadline": 150000,
+          "passPercentage": 51,
+          "passedFundDistribution": {
+            "validators": 18,
+            "feePool": 18,
+            "burn": 18,
+            "executionCost": 18,
+            "bountyPool": 10,
+            "proposerReward": 18
+          },
+          "failedFundDistribution": {
+            "validators": 10,
+            "feePool": 10,
+            "burn": 10,
+            "executionCost": 20,
+            "bountyPool": 50,
+            "proposerReward": 0
+          },
+          "proposalExecutionCost": "executionCostCodeChange"
+        },
+        "general": {
+          "initialFunding": "1000000000",
+          "fundingGoal": "10000000000",
+          "fundingDeadline": 75001,
+          "votingDeadline": 150000,
+          "passPercentage": 51,
+          "passedFundDistribution": {
+            "validators": 18,
+            "feePool": 18,
+            "burn": 18,
+            "executionCost": 18,
+            "bountyPool": 10,
+            "proposerReward": 18
+          },
+          "failedFundDistribution": {
+            "validators": 10,
+            "feePool": 10,
+            "burn": 10,
+            "executionCost": 20,
+            "bountyPool": 50,
+            "proposerReward": 0
+          },
+          "proposalExecutionCost": "executionCostGeneral"
+        },
+        "bountyProgramAddr": "oneledgerBountyProgram"
+      },
+      "stakingOptions": {
+        "minSelfDelegationAmount": "3000000",
+        "minDelegationAmount": "1",
+        "topValidatorCount": 4,
+        "maturityTime": 109200
+      },
+      "delegOptions": {
+        "rewardsMaturityTime": 109200
+      },
+      "evidenceOptions": {
+        "minVotesRequired": 2,
+        "blockVotesDiff": 4,
+        "penaltyBasePercentage": 30,
+        "penaltyBaseDecimals": 100,
+        "penaltyBountyPercentage": 50,
+        "penaltyBountyDecimals": 100,
+        "penaltyBurnPercentage": 50,
+        "penaltyBurnDecimals": 100,
+        "validatorReleaseTime": 0,
+        "validatorVotePercentage": 50,
+        "validatorVoteDecimals": 100,
+        "allegationPercentage": 50,
+        "allegationDecimals": 100
+      },
+      "rewardOptions": {
+        "rewardInterval": 1,
+        "rewardPoolAddress": "rewardpool",
+        "rewardCurrency": "OLT",
+        "estimatedSecondsPerCycle": 1728,
+        "blockSpeedCalculateCycle": 100,
+        "yearCloseWindow": 86400,
+        "yearBlockRewardShares": [
+          "70000000000000000000000000",
+          "70000000000000000000000000",
+          "40000000000000000000000000",
+          "40000000000000000000000000",
+          "30000000000000000000000000"
+        ],
+        "burnoutRate": "5000000000000000000"
+      }
+    },
+    "state": {
+      "Version": 0,
+      "Hash": null
+    },
+    "balances": [
+      {
+        "address": "0lt1866299f5d6cb23fcce49ba35953dca3a66ef448",
+        "currency": "OLT",
+        "amount": "125000000000000000000000000"
+      },
+      {
+        "address": "0lt1866299f5d6cb23fcce49ba35953dca3a66ef448",
+        "currency": "VT",
+        "amount": "100"
+      },
+      {
+        "address": "0lt316bf4c5cc5a93435fa023d8bdf8175890f296e3",
+        "currency": "OLT",
+        "amount": "125000000000000000000000000"
+      },
+      {
+        "address": "0lt316bf4c5cc5a93435fa023d8bdf8175890f296e3",
+        "currency": "VT",
+        "amount": "100"
+      },
+      {
+        "address": "0lt861812c245752559c9d9e91a9ae4de7e4f13cdf8",
+        "currency": "OLT",
+        "amount": "125000000000000000000000000"
+      },
+      {
+        "address": "0lt861812c245752559c9d9e91a9ae4de7e4f13cdf8",
+        "currency": "VT",
+        "amount": "100"
+      },
+      {
+        "address": "0lt2c539685332b3a2ce03481eba81518355537e837",
+        "currency": "OLT",
+        "amount": "125000000000000000000000000"
+      },
+      {
+        "address": "0lt2c539685332b3a2ce03481eba81518355537e837",
+        "currency": "VT",
+        "amount": "100"
+      },
+      {
+        "address": "0lta30ed085986b609be7e8101b27bcd03ef59df31a",
+        "currency": "OLT",
+        "amount": "125000000000000000000000000"
+      },
+      {
+        "address": "0lta30ed085986b609be7e8101b27bcd03ef59df31a",
+        "currency": "VT",
+        "amount": "1"
+      },
+      {
+        "address": "0lt8eae98d56e4bbd133737305cb6d2c543ff2ad3de",
+        "currency": "OLT",
+        "amount": "125000000000000000000000000"
+      },
+      {
+        "address": "0lt8eae98d56e4bbd133737305cb6d2c543ff2ad3de",
+        "currency": "VT",
+        "amount": "1"
+      },
+      {
+        "address": "0lt2b96214be1ce815816097a2eb01cdac1a939dd37",
+        "currency": "OLT",
+        "amount": "125000000000000000000000000"
+      },
+      {
+        "address": "0lt2b96214be1ce815816097a2eb01cdac1a939dd37",
+        "currency": "VT",
+        "amount": "1"
+      },
+      {
+        "address": "0lt830d1fe5744172e76905b85d00039360b6799f4e",
+        "currency": "OLT",
+        "amount": "125000000000000000000000000"
+      },
+      {
+        "address": "0lt830d1fe5744172e76905b85d00039360b6799f4e",
+        "currency": "VT",
+        "amount": "1"
+      }
+    ],
+    "staking": [
+      {
+        "ValidatorAddress": "0lt970dc04d0e67caee4d09a21ed3ef723f2c63e216",
+        "StakeAddress": "0lt1866299f5d6cb23fcce49ba35953dca3a66ef448",
+        "Pubkey": {
+          "keyType": "ed25519",
+          "data": "d7BuL274Mm5q8UwLAlXwjybUMkQTSCHyhqXbf7IwGmU="
+        },
+        "ECDSAPubKey": {
+          "keyType": "btcecsecp",
+          "data": "AlQnePqpuZgm4YLokRL/Ocwf68ETsLBG31Dpn+TYZGlT"
+        },
+        "Name": "0",
+        "Amount": "3000000"
+      },
+      {
+        "ValidatorAddress": "0lte448536f32c54d12f4ca350729ff120c399aaf6f",
+        "StakeAddress": "0lt316bf4c5cc5a93435fa023d8bdf8175890f296e3",
+        "Pubkey": {
+          "keyType": "ed25519",
+          "data": "fJE3dutMHkGiQoMiHsX54HHdGCh9Wb8KMw1rAuvtHJo="
+        },
+        "ECDSAPubKey": {
+          "keyType": "btcecsecp",
+          "data": "A+ZfsX8S/fe5FuMKJq3fJtLeoi91BkgdEzac+L5DLLtd"
+        },
+        "Name": "1",
+        "Amount": "6000000"
+      },
+      {
+        "ValidatorAddress": "0ltc6b8de9fd5e3c6c8b0e719d4c5fa513aeb11fbef",
+        "StakeAddress": "0lt861812c245752559c9d9e91a9ae4de7e4f13cdf8",
+        "Pubkey": {
+          "keyType": "ed25519",
+          "data": "OfRxdmZEo5Uw+GLdyuuSHLvHxvFzYLDIUKdYrLSvyDA="
+        },
+        "ECDSAPubKey": {
+          "keyType": "btcecsecp",
+          "data": "A+Bcq/nTQo7gbO4Fu2LrVPLdnsSvH9/7DWYfIfkq9DhN"
+        },
+        "Name": "2",
+        "Amount": "9000000"
+      },
+      {
+        "ValidatorAddress": "0ltd70173b9dbcc042450685117e1f82134f229d1c5",
+        "StakeAddress": "0lt2c539685332b3a2ce03481eba81518355537e837",
+        "Pubkey": {
+          "keyType": "ed25519",
+          "data": "auag/8NVKK9aXTfinaAVkZ8odzRQFnjpUl+ucYfZP/s="
+        },
+        "ECDSAPubKey": {
+          "keyType": "btcecsecp",
+          "data": "A+sEhkb9QcCaP4ZlsNmf3kTlJABfUG7+xprQLd7d7ClW"
+        },
+        "Name": "3",
+        "Amount": "12000000"
+      }
+    ],
+    "witness": null,
+    "delegation": {
+      "validatorAmounts": null,
+      "validatorDelegationAmounts": null,
+      "delegatorEffectiveAmounts": null,
+      "delegatorBoundedAmounts": null,
+      "matureAmounts": null
+    },
+    "rewards": {
+      "rewardState": {
+        "rewards": [],
+        "intervals": [],
+        "addrList": []
+      },
+      "cumuState": {
+        "totalDistributed": "0",
+        "yearsDistributed": {
+          "Years": []
+        },
+        "maturedBalances": [],
+        "withdrawnAmounts": []
+      }
+    },
+    "domains": [],
+    "trackers": null,
+    "fees": [],
+    "proposals": null,
+    "net_delegators": {
+      "active_list": null,
+      "mature_list": null,
+      "pending_list": null
+    },
+    "delegator_rewards": {
+      "balance_list": null,
+      "mature_list": null,
+      "pending_list": null
+    }
+  }
+}
