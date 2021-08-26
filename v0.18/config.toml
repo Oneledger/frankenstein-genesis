@@ -66,11 +66,11 @@
 
 [p2p]
   # List of seed nodes to connect to
-  seeds = ["a30ed085986b609be7e8101b27bcd03ef59df31a@35.232.117.206:26605"]
+  seeds = ["d2f27c41a68ecee8ea981bf3fc4780431ca2261b@35.232.117.206:26605"]
   # Enables seed mode, which will make the node crawl the network looking for peers
   seed_mode = false
   # List of peers to maintain a persistent connection to
-  persistent_peers = ["8eae98d56e4bbd133737305cb6d2c543ff2ad3de@35.223.34.194:26605"]
+  persistent_peers = ["d652274df7aa82a6f9c668287a256607151098f2@35.223.34.194:26605"]
   # Enable UPNP port forwarding
   upnp = false
   # Set true for strict address routability rules. If true, the node will fail to start if the given P2P address isn't routable'
