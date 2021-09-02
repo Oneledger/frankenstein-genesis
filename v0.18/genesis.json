@@ -1,6 +1,6 @@
 {
   "genesis_time": "2021-08-26T04:07:58.792214678Z",
-  "chain_id": "OneLedger-b194",
+  "chain_id": "Frankenstein-Testnet",
   "consensus_params": {
     "block": {
       "max_bytes": "22020096",
