@@ -1,2 +1,2 @@
-# chronos-genesis
-genesis file for chronos testnet
+# Frankenstein-genesis
+genesis file for Frankenstein testnet
